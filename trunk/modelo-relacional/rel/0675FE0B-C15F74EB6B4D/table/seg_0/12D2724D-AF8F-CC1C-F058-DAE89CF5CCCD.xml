@@ -44,6 +44,18 @@
       </FontObject>
    </fonts>
    <columns>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="id" id="5A5FACF8-3689-06F7-113F-A474766F50C7">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 11:17:41 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
       <Column class="oracle.dbtools.crest.model.design.relational.Column" name="proveedor_id" id="F3D8DAB0-AD97-4DA9-3441-DCA9375F063B">
          <createdBy>ibaca</createdBy>
          <createdTime>2011-11-25 11:15:28 UTC</createdTime>
@@ -77,18 +89,6 @@
          <associations>
             <colAssociation fkAssociation="4A7A59C4-E212-A3FC-8AE1-C2A7FBECABFC" referredColumn="995461A1-AEEF-5784-7B02-E8E872CC7029"/>
          </associations>
-      </Column>
-      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="secuencia" id="5A5FACF8-3689-06F7-113F-A474766F50C7">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-11-25 11:17:41 UTC</createdTime>
-         <generatorID>Generado por el Usuario</generatorID>
-         <ownerDesignName>modelo-relacional</ownerDesignName>
-         <engineerTo>
-            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
-         </engineerTo>
-         <use>1</use>
-         <logicalDatatype>LOGDT011</logicalDatatype>
-         <autoIncrementCycle>false</autoIncrementCycle>
       </Column>
       <Column class="oracle.dbtools.crest.model.design.relational.Column" name="precio" id="1573DAE3-119C-0C79-AC4E-D9B980637C69">
          <createdBy>ibaca</createdBy>
@@ -155,8 +155,6 @@
          <pk>true</pk>
          <indexState>Primary Constraint</indexState>
          <indexColumnUsage>
-            <colUsage columnID="BFDAD2EB-6B0C-5F63-ED39-BFFF1EA4BA52"/>
-            <colUsage columnID="F3D8DAB0-AD97-4DA9-3441-DCA9375F063B"/>
             <colUsage columnID="5A5FACF8-3689-06F7-113F-A474766F50C7"/>
          </indexColumnUsage>
       </ind_PK_UK>

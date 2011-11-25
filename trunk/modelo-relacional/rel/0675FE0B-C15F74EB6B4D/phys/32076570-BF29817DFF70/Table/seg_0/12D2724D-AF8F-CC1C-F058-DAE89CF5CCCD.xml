@@ -47,7 +47,7 @@
          <cache>NOCACHE</cache>
          <storeAs>BINARY XML</storeAs>
       </ColumnProxy>
-      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="producto_id" id="BFDAD2EB-6B0C-5F63-ED39-BFFF1EA4BA52">
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="productos_id" id="BFDAD2EB-6B0C-5F63-ED39-BFFF1EA4BA52">
          <createdBy>ibaca</createdBy>
          <createdTime>2011-11-25 11:14:55 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
@@ -55,7 +55,7 @@
          <cache>NOCACHE</cache>
          <storeAs>BINARY XML</storeAs>
       </ColumnProxy>
-      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="proveedor_id" id="F3D8DAB0-AD97-4DA9-3441-DCA9375F063B">
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="proveedores_id" id="F3D8DAB0-AD97-4DA9-3441-DCA9375F063B">
          <createdBy>ibaca</createdBy>
          <createdTime>2011-11-25 11:15:28 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
