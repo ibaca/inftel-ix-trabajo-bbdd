@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="ventas" id="B1B1ED2E-12E9-B545-5868-D2319283AE68" directorySegmentName="seg_0">
+   <createdBy>ibaca</createdBy>
+   <createdTime>2011-11-25 10:11:08 UTC</createdTime>
+   <generatorID>Generado por el Usuario</generatorID>
+   <ownerDesignName>modelo-relacional</ownerDesignName>
+   <logging>YES</logging>
+   <storeAs>BINARY XML</storeAs>
+   <columnProxies>
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="forma_pago" id="46829418-7115-A0EF-70AF-30AEF587A50C">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 10:38:45 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <cache>NOCACHE</cache>
+         <storeAs>BINARY XML</storeAs>
+      </ColumnProxy>
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="importe_total" id="6B96E2DB-D6B4-B56F-13AD-412DDFD2D8B6">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 10:50:25 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <cache>NOCACHE</cache>
+         <storeAs>BINARY XML</storeAs>
+      </ColumnProxy>
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="fecha_hora" id="91DD74B7-7105-BC33-E858-097536C4395B">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 10:13:48 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <cache>NOCACHE</cache>
+         <storeAs>BINARY XML</storeAs>
+      </ColumnProxy>
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="id" id="92078F7E-39D6-A31B-3CB7-E955CABF1E76">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 10:13:48 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <cache>NOCACHE</cache>
+         <storeAs>BINARY XML</storeAs>
+      </ColumnProxy>
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="caja_id" id="A92CB77E-1B30-B320-98A7-536E9B0CE894">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 10:55:01 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <cache>NOCACHE</cache>
+         <storeAs>BINARY XML</storeAs>
+      </ColumnProxy>
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="tarjeta" id="B40979E4-BA8C-B836-DFBE-72DAE3CF1635">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 10:13:48 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <cache>NOCACHE</cache>
+         <storeAs>BINARY XML</storeAs>
+      </ColumnProxy>
+   </columnProxies>
+   <primaryKeys>
+      <PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ventas_PK" id="C48CDE43-9428-0A2A-01B7-988F9E133D1E">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 10:13:48 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <sortedRows>SORTED</sortedRows>
+         <indexSort>SORTED</indexSort>
+      </PrimaryKey>
+   </primaryKeys>
+</TableProxyOraclev11g>

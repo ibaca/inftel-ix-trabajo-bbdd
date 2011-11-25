@@ -1,0 +1,238 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="5DEE8851-620E-245C-DC75-91697B7D400C" directorySegmentName="seg_0" name="productos">
+   <createdBy>ibaca</createdBy>
+   <createdTime>2011-11-25 09:42:05 UTC</createdTime>
+   <generatorID>Generado por el Usuario</generatorID>
+   <ownerDesignName>modelo-relacional</ownerDesignName>
+   <engineerTo>
+      <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+   </engineerTo>
+   <pkName>productos_PK</pkName>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Título</foType>
+         <fontStyle>1</fontStyle>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Columna</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Tipo de Dato</foType>
+         <colorRGB>-16744448</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Elemento de Clave Primaria</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Elemento de Clave Ajena</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Elemento de Clave Única</foType>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>No Nulo</foType>
+         <colorRGB>-65536</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Clave</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+   </fonts>
+   <columns>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="id" id="995461A1-AEEF-5784-7B02-E8E872CC7029">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 09:43:10 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="nombre" id="474E7F12-77AF-526A-1592-D6459B10FDEB">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 09:50:44 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>45</dataTypeSize>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="descripcion" id="E464384A-B8CB-6C09-B892-2B391A6A5153">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 09:50:45 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+         <dataTypeSize>45</dataTypeSize>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="pvp" id="43451EA4-A363-24AB-986A-8FC83FDB099F">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 09:52:18 UTC</createdTime>
+         <comment>Precio venta al publico en centimos de euro</comment>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="existencias_num" id="038355C5-6DBF-E31F-93DF-CC1C202BBAF7">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 09:50:45 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="existencias_min" id="671EA367-0DB7-582B-B537-B6622161FEAB">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 09:50:45 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="existencias_max" id="236269ED-0896-BEA6-17C9-8BD17D224152">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 09:50:45 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="stock_num" id="816F7D57-5C0B-4614-1154-1556D5007B49">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 09:50:45 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="stock_min" id="67E7106E-417E-4AF4-037D-66B433B104CE">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 09:50:45 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="stock_max" id="10B2C34B-6979-48BD-3890-0DA93227CAA2">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 09:50:45 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="departamento_id" id="954EED6B-91DE-10F8-F5B7-2011EE0BD159">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 10:04:02 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <delegate>5DE78193-4A2E-8328-0001-1504988D725A</delegate>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+         <associations>
+            <colAssociation fkAssociation="397BA7E8-2E81-8AA7-531A-185E2CABDBB5" referredColumn="5DE78193-4A2E-8328-0001-1504988D725A"/>
+         </associations>
+      </Column>
+   </columns>
+   <indexes>
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="42DF9663-6EF8-F9AE-9DB8-2C929AFF6184" name="productos_PK">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 09:50:45 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <pk>true</pk>
+         <indexState>Primary Constraint</indexState>
+         <indexColumnUsage>
+            <colUsage columnID="995461A1-AEEF-5784-7B02-E8E872CC7029"/>
+         </indexColumnUsage>
+      </ind_PK_UK>
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="5EBA3471-26EC-7A80-F29A-880554EC8349" name="productos_nombre_UN">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 09:53:57 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <indexState>Unique Constraint</indexState>
+         <indexColumnUsage>
+            <colUsage columnID="474E7F12-77AF-526A-1592-D6459B10FDEB"/>
+         </indexColumnUsage>
+      </ind_PK_UK>
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="46574B7F-1A1E-9AA7-4CC8-8BAE9286C58D" name="productos_departamentos_FK">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 10:04:02 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <indexColumnUsage>
+            <colUsage columnID="954EED6B-91DE-10F8-F5B7-2011EE0BD159"/>
+         </indexColumnUsage>
+      </ind_PK_UK>
+   </indexes>
+</Table>

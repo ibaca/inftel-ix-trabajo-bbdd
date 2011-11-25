@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="departamentos" id="47B32AA6-3A88-2C9B-4270-C6214A23DF0F" directorySegmentName="seg_0">
+   <createdBy>ibaca</createdBy>
+   <createdTime>2011-11-25 10:08:54 UTC</createdTime>
+   <generatorID>Generado por el Usuario</generatorID>
+   <ownerDesignName>modelo-relacional</ownerDesignName>
+   <logging>YES</logging>
+   <storeAs>BINARY XML</storeAs>
+   <columnProxies>
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="telefono" id="432EE690-A77E-76D5-C8A8-7D712B0B579C">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 10:08:54 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <cache>NOCACHE</cache>
+         <storeAs>BINARY XML</storeAs>
+      </ColumnProxy>
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="id" id="5DE78193-4A2E-8328-0001-1504988D725A">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 10:08:54 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <cache>NOCACHE</cache>
+         <storeAs>BINARY XML</storeAs>
+      </ColumnProxy>
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="nombre" id="D315D5FA-B7AB-D67D-53EA-3BDFA794508A">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 10:08:54 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <cache>NOCACHE</cache>
+         <storeAs>BINARY XML</storeAs>
+      </ColumnProxy>
+   </columnProxies>
+   <primaryKeys>
+      <PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="departamentos_PK" id="1BA6D96F-3318-D6BD-7FEA-C93A99A21E3A">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 10:08:54 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <sortedRows>SORTED</sortedRows>
+         <indexSort>SORTED</indexSort>
+      </PrimaryKey>
+   </primaryKeys>
+</TableProxyOraclev11g>

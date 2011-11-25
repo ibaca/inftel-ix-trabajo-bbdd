@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modelo-relacional" id="D1124E1B-0FE6-C1B3-BC37-479C285552BB" version="3.41">
+   <createdBy>ibaca</createdBy>
+   <createdTime>2011-11-25 09:14:15 UTC</createdTime>
+   <generatorID>Generado por el Usuario</generatorID>
+   <ownerDesignName>modelo-relacional</ownerDesignName>
+   <capitalNames>false</capitalNames>
+   <designId>D1124E1B-0FE6-C1B3-BC37-479C285552BB</designId>
+</OSDM_Design>

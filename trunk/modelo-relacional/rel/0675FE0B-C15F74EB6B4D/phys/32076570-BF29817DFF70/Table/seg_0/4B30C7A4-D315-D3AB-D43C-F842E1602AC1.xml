@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="presupuestos" id="4B30C7A4-D315-D3AB-D43C-F842E1602AC1" directorySegmentName="seg_0">
+   <createdBy>ibaca</createdBy>
+   <createdTime>2011-11-25 10:08:54 UTC</createdTime>
+   <generatorID>Generado por el Usuario</generatorID>
+   <ownerDesignName>modelo-relacional</ownerDesignName>
+   <logging>YES</logging>
+   <storeAs>BINARY XML</storeAs>
+   <columnProxies>
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="estimado" id="1925AC7A-010C-C9A9-D4C5-8473F658A819">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 10:08:54 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <cache>NOCACHE</cache>
+         <storeAs>BINARY XML</storeAs>
+      </ColumnProxy>
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="ejercicio" id="20DFACC6-19F4-CED0-4DD0-3633989D36E2">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 10:08:54 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <cache>NOCACHE</cache>
+         <storeAs>BINARY XML</storeAs>
+      </ColumnProxy>
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="departamento_id" id="649F4026-CC49-B414-72EC-3B4D4F737328">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 10:08:54 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <cache>NOCACHE</cache>
+         <storeAs>BINARY XML</storeAs>
+      </ColumnProxy>
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="acumulado" id="CEED7657-8442-4F92-F9A1-F1026BEC18BE">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 10:08:54 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <cache>NOCACHE</cache>
+         <storeAs>BINARY XML</storeAs>
+      </ColumnProxy>
+   </columnProxies>
+   <foreignKeys>
+      <ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="presupuestos_departamentos_FK" id="B510B190-8190-B829-442B-AD379F1FEE13">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 10:08:54 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+      </ForeignKey>
+   </foreignKeys>
+   <primaryKeys>
+      <PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="presupuestos_PK" id="A239958E-73DC-DD0E-2DB9-396FD7F4EBCB">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 10:08:54 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <sortedRows>SORTED</sortedRows>
+         <indexSort>SORTED</indexSort>
+      </PrimaryKey>
+   </primaryKeys>
+</TableProxyOraclev11g>
