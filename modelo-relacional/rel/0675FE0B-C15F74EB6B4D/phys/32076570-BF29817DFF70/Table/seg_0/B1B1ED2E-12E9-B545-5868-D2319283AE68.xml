@@ -14,6 +14,7 @@
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <cache>NOCACHE</cache>
          <storeAs>BINARY XML</storeAs>
+         <columnExpression>deducir_forma_pago(tarjeta)</columnExpression>
       </ColumnProxy>
       <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="importe_total" id="6B96E2DB-D6B4-B56F-13AD-412DDFD2D8B6">
          <createdBy>ibaca</createdBy>

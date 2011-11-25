@@ -23,7 +23,7 @@
          <cache>NOCACHE</cache>
          <storeAs>BINARY XML</storeAs>
       </ColumnProxy>
-      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="departamento_id" id="649F4026-CC49-B414-72EC-3B4D4F737328">
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="departamentos_id" id="649F4026-CC49-B414-72EC-3B4D4F737328">
          <createdBy>ibaca</createdBy>
          <createdTime>2011-11-25 10:08:54 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>

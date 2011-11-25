@@ -15,7 +15,7 @@
          <cache>NOCACHE</cache>
          <storeAs>BINARY XML</storeAs>
       </ColumnProxy>
-      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="venta_id" id="1D87A051-0A61-9E5F-D7E4-5ACE22DFC483">
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="ventas_id" id="1D87A051-0A61-9E5F-D7E4-5ACE22DFC483">
          <createdBy>ibaca</createdBy>
          <createdTime>2011-11-25 10:51:32 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
@@ -31,7 +31,7 @@
          <cache>NOCACHE</cache>
          <storeAs>BINARY XML</storeAs>
       </ColumnProxy>
-      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="producto_id" id="3C2D2D1F-EBF0-A1E2-A6BC-AC2BBE99E36E">
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="productos_id" id="3C2D2D1F-EBF0-A1E2-A6BC-AC2BBE99E36E">
          <createdBy>ibaca</createdBy>
          <createdTime>2011-11-25 10:53:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
@@ -41,13 +41,13 @@
       </ColumnProxy>
    </columnProxies>
    <foreignKeys>
-      <ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ventas_lista_FK" id="C1BF66B8-C09F-948B-568F-BEB4A2C3223B">
+      <ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="venta_lista_productos_ventas_FK" id="C1BF66B8-C09F-948B-568F-BEB4A2C3223B">
          <createdBy>ibaca</createdBy>
          <createdTime>2011-11-25 10:51:32 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
       </ForeignKey>
-      <ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="venta_lista_productos_FK" id="EBA7BA3C-6C7D-8E0E-4436-2AA3299104C8">
+      <ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="venta_lista_productos_productos_FK" id="EBA7BA3C-6C7D-8E0E-4436-2AA3299104C8">
          <createdBy>ibaca</createdBy>
          <createdTime>2011-11-25 10:53:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>

@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <StructuredType class="oracle.dbtools.crest.model.design.datatypes.StructuredType" name="XMLTYPE" id="F72C39E0-D1CA-8821-2AD7-A1E95A37D3D1" directorySegmentName="seg_0">
-   <createdBy>inftel</createdBy>
-   <createdTime>2011-11-25 18:02:18 UTC</createdTime>
+   <createdBy>ibaca</createdBy>
+   <createdTime>2011-11-25 09:14:16 UTC</createdTime>
    <generatorID>Generado por el Usuario</generatorID>
    <ownerDesignName>modelo-relacional</ownerDesignName>
    <engineerTo>
