@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" id="7508B60A-2227-C720-32DC-19C0EF7A6D37" directorySegmentName="seg_0" name="cajas">
+   <createdBy>ibaca</createdBy>
+   <createdTime>2011-11-25 10:56:33 UTC</createdTime>
+   <generatorID>Generado por el Usuario</generatorID>
+   <ownerDesignName>modelo-relacional</ownerDesignName>
+   <engineerTo>
+      <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+   </engineerTo>
+   <userDefined>true</userDefined>
+   <userDefinedSQL>SELECT ventas.caja_id AS id FROM ventas</userDefinedSQL>
+   <layoutSQL>&amp;lt;?xml version = &amp;apos;1.0&amp;apos; encoding = &amp;apos;UTF-8&amp;apos;?&amp;gt;&amp;lt;br&amp;gt;&amp;lt;ActiveQueryBuilderLayout&amp;gt;&amp;lt;SQL&amp;gt;Select ventas.caja_id As id From ventas&amp;lt;/SQL&amp;gt;&amp;lt;SubQueries&amp;gt;&amp;lt;SubQuery SQL=&amp;quot;Select ventas.caja_id As id From ventas&amp;quot;&amp;gt;&amp;lt;UnionSubQuery&amp;gt;&amp;lt;DataSource SQL=&amp;quot;ventas&amp;quot; X=&amp;quot;50&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;152&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;/UnionSubQuery&amp;gt;&amp;lt;/SubQuery&amp;gt;&amp;lt;/SubQueries&amp;gt;&amp;lt;/ActiveQueryBuilderLayout&amp;gt;</layoutSQL>
+   <parsed>true</parsed>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Título</foType>
+         <fontStyle>1</fontStyle>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Columna</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Tipo de Dato</foType>
+         <colorRGB>-16744448</colorRGB>
+      </FontObject>
+   </fonts>
+   <usedContainers>
+      <container containerID="B1B1ED2E-12E9-B545-5868-D2319283AE68"/>
+   </usedContainers>
+   <viewElements>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="caja_id" id="CB314FD0-45A9-973A-36BE-062466D6FB69" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 11:00:49 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>id</alias>
+         <dataType>INTEGER</dataType>
+         <reference>false</reference>
+         <referencedColumn>A92CB77E-1B30-B320-98A7-536E9B0CE894</referencedColumn>
+         <table>B1B1ED2E-12E9-B545-5868-D2319283AE68</table>
+      </viewElement>
+   </viewElements>
+   <usedObjects>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B1B1ED2E-12E9-B545-5868-D2319283AE68">
+         <container>true</container>
+         <tableName>ventas</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="A92CB77E-1B30-B320-98A7-536E9B0CE894">
+         <columnName>caja_id</columnName>
+         <tableName>ventas</tableName>
+      </UsedObject>
+   </usedObjects>
+</TableView>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="C6107DDD-920C-898E-4593-008FC41C61D6" directorySegmentName="seg_0" name="presupuestos_departamentos_FK">
+   <createdBy>ibaca</createdBy>
+   <createdTime>2011-11-25 10:00:04 UTC</createdTime>
+   <generatorID>Generado por el Usuario</generatorID>
+   <ownerDesignName>modelo-relacional</ownerDesignName>
+   <engineerTo>
+      <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+   </engineerTo>
+   <containerWithKeyObject>4B30C7A4-D315-D3AB-D43C-F842E1602AC1</containerWithKeyObject>
+   <deleteRule>CASCADE</deleteRule>
+   <localFKIndex>B510B190-8190-B829-442B-AD379F1FEE13</localFKIndex>
+   <keyObject>1BA6D96F-3318-D6BD-7FEA-C93A99A21E3A</keyObject>
+   <mandatory>true</mandatory>
+   <transferable>true</transferable>
+</FKIndexAssociation>
