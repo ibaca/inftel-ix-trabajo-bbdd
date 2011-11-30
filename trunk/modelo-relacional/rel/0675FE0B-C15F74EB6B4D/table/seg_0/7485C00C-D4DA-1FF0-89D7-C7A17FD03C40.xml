@@ -54,6 +54,8 @@
          </engineerTo>
          <use>1</use>
          <logicalDatatype>LOGDT011</logicalDatatype>
+         <autoIncrementColumn>true</autoIncrementColumn>
+         <identityColumn>true</identityColumn>
          <autoIncrementCycle>false</autoIncrementCycle>
       </Column>
       <Column class="oracle.dbtools.crest.model.design.relational.Column" name="oferta_id" id="6FBD5A7E-8AA3-495F-DD32-C74AF705A5DD">
@@ -81,9 +83,24 @@
          <engineerTo>
             <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
          </engineerTo>
-         <nullsAllowed>true</nullsAllowed>
+         <useDomainConstraints>false</useDomainConstraints>
+         <defaultValue>0</defaultValue>
          <use>1</use>
          <logicalDatatype>LOGDT011</logicalDatatype>
+         <usesDefaultValue>true</usesDefaultValue>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="fecha_creacion" id="47D7AF02-DEB1-B7AB-CBEE-ECC545EA3EDB">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-30 08:38:12 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <defaultValue>SYSDATE</defaultValue>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
          <autoIncrementCycle>false</autoIncrementCycle>
       </Column>
    </columns>

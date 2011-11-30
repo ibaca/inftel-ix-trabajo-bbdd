@@ -47,6 +47,15 @@
          <cache>NOCACHE</cache>
          <storeAs>BINARY XML</storeAs>
       </ColumnProxy>
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="lid" id="F7C53BCC-8131-D9AA-A12B-9A66A5BB3C87">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-30 08:14:50 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <cache>NOCACHE</cache>
+         <storeAs>BINARY XML</storeAs>
+         <columnExpression>nvl(cif,nombre)</columnExpression>
+      </ColumnProxy>
    </columnProxies>
    <primaryKeys>
       <PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="proveedores_PK" id="4455DA0C-CCBD-9990-BD0B-94A3AA9DE0FD">
@@ -58,4 +67,30 @@
          <indexSort>SORTED</indexSort>
       </PrimaryKey>
    </primaryKeys>
+   <tableCheckConstraints>
+      <TableCheckConstraint class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableCheckConstraintOraclev10g" name="proveedores_cif_o_nombre_CK" id="E1025FFF-1309-6D9C-14FF-CB502C43821D">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-30 08:07:28 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+      </TableCheckConstraint>
+   </tableCheckConstraints>
+   <uniqueKeys>
+      <UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="proveedores_cif_UN" id="6DF8208D-2A6A-25D9-2E98-9045AC3876BE">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-30 08:04:26 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <sortedRows>SORTED</sortedRows>
+         <indexSort>SORTED</indexSort>
+      </UniqueKey>
+      <UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="proveedores_nombre_UN" id="B6A64BCC-A5FC-A84F-E26B-76BDBEE6EA8C">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-30 08:07:28 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <sortedRows>SORTED</sortedRows>
+         <indexSort>SORTED</indexSort>
+      </UniqueKey>
+   </uniqueKeys>
 </TableProxyOraclev11g>
