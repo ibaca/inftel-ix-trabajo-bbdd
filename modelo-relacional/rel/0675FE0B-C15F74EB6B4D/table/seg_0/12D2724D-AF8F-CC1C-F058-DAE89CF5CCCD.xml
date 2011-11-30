@@ -93,12 +93,12 @@
       <Column class="oracle.dbtools.crest.model.design.relational.Column" name="precio" id="1573DAE3-119C-0C79-AC4E-D9B980637C69">
          <createdBy>ibaca</createdBy>
          <createdTime>2011-11-25 11:14:38 UTC</createdTime>
+         <comment>Por unidad</comment>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
             <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
          </engineerTo>
-         <nullsAllowed>true</nullsAllowed>
          <use>1</use>
          <logicalDatatype>LOGDT011</logicalDatatype>
          <autoIncrementCycle>false</autoIncrementCycle>
@@ -106,12 +106,12 @@
       <Column class="oracle.dbtools.crest.model.design.relational.Column" name="minimo" id="2CA53646-BBE0-9ECD-6887-AF3E65DEECEB">
          <createdBy>ibaca</createdBy>
          <createdTime>2011-11-25 11:14:38 UTC</createdTime>
+         <comment>Minimo unidades</comment>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
             <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
          </engineerTo>
-         <nullsAllowed>true</nullsAllowed>
          <use>1</use>
          <logicalDatatype>LOGDT011</logicalDatatype>
          <autoIncrementCycle>false</autoIncrementCycle>
@@ -119,12 +119,12 @@
       <Column class="oracle.dbtools.crest.model.design.relational.Column" name="paquete" id="22E86715-3261-6C3E-3EF7-468F628F6764">
          <createdBy>ibaca</createdBy>
          <createdTime>2011-11-25 11:14:38 UTC</createdTime>
+         <comment>Unidades por paquete</comment>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
             <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
          </engineerTo>
-         <nullsAllowed>true</nullsAllowed>
          <use>1</use>
          <logicalDatatype>LOGDT011</logicalDatatype>
          <autoIncrementCycle>false</autoIncrementCycle>
@@ -132,14 +132,27 @@
       <Column class="oracle.dbtools.crest.model.design.relational.Column" name="tardanza" id="3A2D3AEC-0398-26FB-9DBD-820808EB3CFD">
          <createdBy>ibaca</createdBy>
          <createdTime>2011-11-25 11:14:38 UTC</createdTime>
+         <comment>En dias</comment>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
             <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
          </engineerTo>
-         <nullsAllowed>true</nullsAllowed>
          <use>1</use>
          <logicalDatatype>LOGDT011</logicalDatatype>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="fecha_creacion" id="A020CBA8-740F-0E65-D9B4-16C4078BE5DE">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-30 08:35:49 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <defaultValue>SYSDATE</defaultValue>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
          <autoIncrementCycle>false</autoIncrementCycle>
       </Column>
    </columns>
