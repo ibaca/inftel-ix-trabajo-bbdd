@@ -7,11 +7,21 @@
    <logging>YES</logging>
    <storeAs>BINARY XML</storeAs>
    <columnProxies>
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="ingreso_acumulado" id="089EC75B-7F36-9DC0-C1E4-48D9C53DC0BD">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 10:12:17 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <defaultValue>0</defaultValue>
+         <cache>NOCACHE</cache>
+         <storeAs>BINARY XML</storeAs>
+      </ColumnProxy>
       <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="estimado" id="1925AC7A-010C-C9A9-D4C5-8473F658A819">
          <createdBy>ibaca</createdBy>
          <createdTime>2011-11-25 10:08:54 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
+         <defaultValue>0</defaultValue>
          <cache>NOCACHE</cache>
          <storeAs>BINARY XML</storeAs>
       </ColumnProxy>
@@ -23,7 +33,7 @@
          <cache>NOCACHE</cache>
          <storeAs>BINARY XML</storeAs>
       </ColumnProxy>
-      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="departamentos_id" id="649F4026-CC49-B414-72EC-3B4D4F737328">
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="departamento_id" id="649F4026-CC49-B414-72EC-3B4D4F737328">
          <createdBy>ibaca</createdBy>
          <createdTime>2011-11-25 10:08:54 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
@@ -31,11 +41,12 @@
          <cache>NOCACHE</cache>
          <storeAs>BINARY XML</storeAs>
       </ColumnProxy>
-      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="acumulado" id="CEED7657-8442-4F92-F9A1-F1026BEC18BE">
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="gasto_acumulado" id="CEED7657-8442-4F92-F9A1-F1026BEC18BE">
          <createdBy>ibaca</createdBy>
          <createdTime>2011-11-25 10:08:54 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
+         <defaultValue>0</defaultValue>
          <cache>NOCACHE</cache>
          <storeAs>BINARY XML</storeAs>
       </ColumnProxy>

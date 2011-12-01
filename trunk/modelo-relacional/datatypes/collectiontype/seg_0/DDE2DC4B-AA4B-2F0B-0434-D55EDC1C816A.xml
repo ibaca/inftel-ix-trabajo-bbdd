@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<CollectionType class="oracle.dbtools.crest.model.design.datatypes.CollectionType" name="departamento_tipos" id="DDE2DC4B-AA4B-2F0B-0434-D55EDC1C816A" directorySegmentName="seg_0">
+   <createdBy>ibaca</createdBy>
+   <createdTime>2011-12-01 10:09:01 UTC</createdTime>
+   <generatorID>Generado por el Usuario</generatorID>
+   <ownerDesignName>modelo-relacional</ownerDesignName>
+   <engineerTo>
+      <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+   </engineerTo>
+   <predefined>false</predefined>
+   <dataTypeDescr class="oracle.dbtools.crest.model.design.datatypes.CollectionType$DataTypeWrapper">
+      <size>45</size>
+      <type>LOGDT024</type>
+      <isreference>false</isreference>
+   </dataTypeDescr>
+   <maxElement>1</maxElement>
+   <type>COLLECTION</type>
+</CollectionType>

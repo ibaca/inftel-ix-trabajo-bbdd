@@ -56,6 +56,24 @@
          <logicalDatatype>LOGDT011</logicalDatatype>
          <autoIncrementCycle>false</autoIncrementCycle>
       </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="departamento_id" id="954EED6B-91DE-10F8-F5B7-2011EE0BD159">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-11-25 10:04:02 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+         <delegate>5DE78193-4A2E-8328-0001-1504988D725A</delegate>
+         <previousColumn>false</previousColumn>
+         <autoIncrementCycle>false</autoIncrementCycle>
+         <associations>
+            <colAssociation fkAssociation="397BA7E8-2E81-8AA7-531A-185E2CABDBB5" referredColumn="5DE78193-4A2E-8328-0001-1504988D725A"/>
+         </associations>
+      </Column>
       <Column class="oracle.dbtools.crest.model.design.relational.Column" name="nombre" id="474E7F12-77AF-526A-1592-D6459B10FDEB">
          <createdBy>ibaca</createdBy>
          <createdTime>2011-11-25 09:50:44 UTC</createdTime>
@@ -92,7 +110,7 @@
          <engineerTo>
             <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
          </engineerTo>
-         <nullsAllowed>true</nullsAllowed>
+         <defaultValue>0</defaultValue>
          <use>1</use>
          <logicalDatatype>LOGDT011</logicalDatatype>
          <autoIncrementCycle>false</autoIncrementCycle>
@@ -105,7 +123,7 @@
          <engineerTo>
             <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
          </engineerTo>
-         <nullsAllowed>true</nullsAllowed>
+         <defaultValue>0</defaultValue>
          <use>1</use>
          <logicalDatatype>LOGDT011</logicalDatatype>
          <autoIncrementCycle>false</autoIncrementCycle>
@@ -118,7 +136,7 @@
          <engineerTo>
             <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
          </engineerTo>
-         <nullsAllowed>true</nullsAllowed>
+         <defaultValue>0</defaultValue>
          <use>1</use>
          <logicalDatatype>LOGDT011</logicalDatatype>
          <autoIncrementCycle>false</autoIncrementCycle>
@@ -131,7 +149,7 @@
          <engineerTo>
             <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
          </engineerTo>
-         <nullsAllowed>true</nullsAllowed>
+         <defaultValue>0</defaultValue>
          <use>1</use>
          <logicalDatatype>LOGDT011</logicalDatatype>
          <autoIncrementCycle>false</autoIncrementCycle>
@@ -144,7 +162,7 @@
          <engineerTo>
             <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
          </engineerTo>
-         <nullsAllowed>true</nullsAllowed>
+         <defaultValue>0</defaultValue>
          <use>1</use>
          <logicalDatatype>LOGDT011</logicalDatatype>
          <autoIncrementCycle>false</autoIncrementCycle>
@@ -157,7 +175,7 @@
          <engineerTo>
             <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
          </engineerTo>
-         <nullsAllowed>true</nullsAllowed>
+         <defaultValue>0</defaultValue>
          <use>1</use>
          <logicalDatatype>LOGDT011</logicalDatatype>
          <autoIncrementCycle>false</autoIncrementCycle>
@@ -170,28 +188,10 @@
          <engineerTo>
             <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
          </engineerTo>
-         <nullsAllowed>true</nullsAllowed>
+         <defaultValue>0</defaultValue>
          <use>1</use>
          <logicalDatatype>LOGDT011</logicalDatatype>
          <autoIncrementCycle>false</autoIncrementCycle>
-      </Column>
-      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="departamento_id" id="954EED6B-91DE-10F8-F5B7-2011EE0BD159">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-11-25 10:04:02 UTC</createdTime>
-         <generatorID>Generado por el Usuario</generatorID>
-         <ownerDesignName>modelo-relacional</ownerDesignName>
-         <engineerTo>
-            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
-         </engineerTo>
-         <nullsAllowed>true</nullsAllowed>
-         <use>1</use>
-         <logicalDatatype>LOGDT011</logicalDatatype>
-         <delegate>5DE78193-4A2E-8328-0001-1504988D725A</delegate>
-         <previousColumn>false</previousColumn>
-         <autoIncrementCycle>false</autoIncrementCycle>
-         <associations>
-            <colAssociation fkAssociation="397BA7E8-2E81-8AA7-531A-185E2CABDBB5" referredColumn="5DE78193-4A2E-8328-0001-1504988D725A"/>
-         </associations>
       </Column>
    </columns>
    <indexes>
