@@ -104,6 +104,20 @@
          <logicalDatatype>LOGDT011</logicalDatatype>
          <autoIncrementCycle>false</autoIncrementCycle>
       </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="fecha_hora" id="378E3569-5DE1-6931-B75D-1CAD0DEAD772">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 13:00:07 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <defaultValue>CURRENT_DATE</defaultValue>
+         <use>1</use>
+         <logicalDatatype>LOGDT008</logicalDatatype>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
    </columns>
    <indexes>
       <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="8E278ADC-7118-90D6-57C4-B6C14BC47FD5" name="venta_lista_productos_PK">

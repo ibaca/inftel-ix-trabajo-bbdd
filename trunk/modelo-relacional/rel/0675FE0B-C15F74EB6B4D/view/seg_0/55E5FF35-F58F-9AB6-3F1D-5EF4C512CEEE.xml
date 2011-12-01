@@ -1,0 +1,448 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" id="55E5FF35-F58F-9AB6-3F1D-5EF4C512CEEE" directorySegmentName="seg_0" name="departamentos_ventas">
+   <createdBy>ibaca</createdBy>
+   <createdTime>2011-12-01 15:33:55 UTC</createdTime>
+   <generatorID>Generado por el Usuario</generatorID>
+   <ownerDesignName>modelo-relacional</ownerDesignName>
+   <engineerTo>
+      <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+   </engineerTo>
+   <userDefined>true</userDefined>
+   <userDefinedSQL>SELECT productos.pvp                AS pvp_producto,&amp;lt;br/&amp;gt;  productos.descripcion             AS descripcion_producto,&amp;lt;br/&amp;gt;  productos.nombre                  AS nombre_producto,&amp;lt;br/&amp;gt;  productos.departamento_id         AS departamento_id,&amp;lt;br/&amp;gt;  departamentos.nombre              AS nombre_departamento,&amp;lt;br/&amp;gt;  departamentos.telefono            AS telefono_departamento,&amp;lt;br/&amp;gt;  departamentos.tipo                AS tipo_departamento,&amp;lt;br/&amp;gt;  venta_lista_productos.venta_id    AS venta_id,&amp;lt;br/&amp;gt;  venta_lista_productos.producto_id AS producto_id,&amp;lt;br/&amp;gt;  venta_lista_productos.cantidad    AS venta_producto_cantidad,&amp;lt;br/&amp;gt;  venta_lista_productos.pvp         AS venta_producto_pvp,&amp;lt;br/&amp;gt;  venta_lista_productos.fecha_hora  AS venta_producto_fecha,&amp;lt;br/&amp;gt;  ventas.caja_id                    AS venta_fecha_id,&amp;lt;br/&amp;gt;  ventas.fecha_hora                 AS venta_fecha,&amp;lt;br/&amp;gt;  ventas.tarjeta                    AS venta_tarjeta,&amp;lt;br/&amp;gt;  ventas.forma_pago                 AS venta_forma_pago,&amp;lt;br/&amp;gt;  ventas.importe_total              AS venta_importe_total,&amp;lt;br/&amp;gt;  ventas.activa                     AS venta_activa,&amp;lt;br/&amp;gt;  TRUNC(ventas.fecha_hora, &amp;apos;DD&amp;apos;)    AS venta_fecha_dia,&amp;lt;br/&amp;gt;  TRUNC(ventas.fecha_hora, &amp;apos;MM&amp;apos;)    AS venta_fecha_mes,&amp;lt;br/&amp;gt;  TRUNC(ventas.fecha_hora, &amp;apos;YYYY&amp;apos;)  AS venta_fecha_ejercicio&amp;lt;br/&amp;gt;FROM departamentos&amp;lt;br/&amp;gt;INNER JOIN productos&amp;lt;br/&amp;gt;ON departamentos.id = productos.departamento_id&amp;lt;br/&amp;gt;INNER JOIN venta_lista_productos&amp;lt;br/&amp;gt;ON productos.id = venta_lista_productos.producto_id&amp;lt;br/&amp;gt;INNER JOIN ventas&amp;lt;br/&amp;gt;ON ventas.id = venta_lista_productos.venta_id</userDefinedSQL>
+   <layoutSQL>&amp;lt;?xml version = &amp;apos;1.0&amp;apos; encoding = &amp;apos;UTF-8&amp;apos;?&amp;gt;&amp;lt;br&amp;gt;&amp;lt;ActiveQueryBuilderLayout&amp;gt;&amp;lt;SQL&amp;gt;Select productos.pvp As pvp_producto, productos.descripcion As descripcion_producto, productos.nombre As nombre_producto, productos.departamento_id As departamento_id, departamentos.nombre As nombre_departamento, departamentos.telefono As telefono_departamento, departamentos.tipo As tipo_departamento, venta_lista_productos.venta_id As venta_id, venta_lista_productos.producto_id As producto_id, venta_lista_productos.cantidad As venta_producto_cantidad, venta_lista_productos.pvp As venta_producto_pvp, venta_lista_productos.fecha_hora As venta_producto_fecha, ventas.caja_id As venta_fecha_id, ventas.fecha_hora As venta_fecha, ventas.tarjeta As venta_tarjeta, ventas.forma_pago As venta_forma_pago, ventas.importe_total As venta_importe_total, ventas.activa As venta_activa, trunc(ventas.fecha_hora, &amp;apos;DD&amp;apos;) As venta_fecha_dia, trunc(ventas.fecha_hora, &amp;apos;MM&amp;apos;) As venta_fecha_mes, trunc(ventas.fecha_hora, &amp;apos;YYYY&amp;apos;) As venta_fecha_ejercicio From departamentos Inner Join productos On departamentos.id = productos.departamento_id Inner Join venta_lista_productos On productos.id = venta_lista_productos.producto_id Inner Join ventas On ventas.id = venta_lista_productos.venta_id&amp;lt;/SQL&amp;gt;&amp;lt;SubQueries&amp;gt;&amp;lt;SubQuery SQL=&amp;quot;Select productos.pvp As pvp_producto, productos.descripcion As descripcion_producto, productos.nombre As nombre_producto, productos.departamento_id As departamento_id, departamentos.nombre As nombre_departamento, departamentos.telefono As telefono_departamento, departamentos.tipo As tipo_departamento, venta_lista_productos.venta_id As venta_id, venta_lista_productos.producto_id As producto_id, venta_lista_productos.cantidad As venta_producto_cantidad, venta_lista_productos.pvp As venta_producto_pvp, venta_lista_productos.fecha_hora As venta_producto_fecha, ventas.caja_id As venta_fecha_id, ventas.fecha_hora As venta_fecha, ventas.tarjeta As venta_tarjeta, ventas.forma_pago As venta_forma_pago, ventas.importe_total As venta_importe_total, ventas.activa As venta_activa, trunc(ventas.fecha_hora, &amp;apos;DD&amp;apos;) As venta_fecha_dia, trunc(ventas.fecha_hora, &amp;apos;MM&amp;apos;) As venta_fecha_mes, trunc(ventas.fecha_hora, &amp;apos;YYYY&amp;apos;) As venta_fecha_ejercicio From departamentos Inner Join productos On departamentos.id = productos.departamento_id Inner Join venta_lista_productos On productos.id = venta_lista_productos.producto_id Inner Join ventas On ventas.id = venta_lista_productos.venta_id&amp;quot;&amp;gt;&amp;lt;UnionSubQuery&amp;gt;&amp;lt;DataSource SQL=&amp;quot;departamentos&amp;quot; X=&amp;quot;50&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;118&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;DataSource SQL=&amp;quot;productos&amp;quot; X=&amp;quot;240&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;237&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;DataSource SQL=&amp;quot;venta_lista_productos&amp;quot; X=&amp;quot;430&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;135&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;DataSource SQL=&amp;quot;ventas&amp;quot; X=&amp;quot;620&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;169&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;/UnionSubQuery&amp;gt;&amp;lt;/SubQuery&amp;gt;&amp;lt;/SubQueries&amp;gt;&amp;lt;/ActiveQueryBuilderLayout&amp;gt;</layoutSQL>
+   <parsed>true</parsed>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Título</foType>
+         <fontStyle>1</fontStyle>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Columna</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Tipo de Dato</foType>
+         <colorRGB>-16744448</colorRGB>
+      </FontObject>
+   </fonts>
+   <usedContainers>
+      <container containerID="5DEE8851-620E-245C-DC75-91697B7D400C"/>
+      <container containerID="47B32AA6-3A88-2C9B-4270-C6214A23DF0F"/>
+      <container containerID="5DA184CA-B041-5587-FBBB-FC71374F3733"/>
+      <container containerID="B1B1ED2E-12E9-B545-5868-D2319283AE68"/>
+   </usedContainers>
+   <viewElements>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="pvp" id="CA3F8AA5-ECAB-8F26-5F7E-A163B63607D8" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 15:53:58 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>pvp_producto</alias>
+         <dataType>INTEGER</dataType>
+         <reference>false</reference>
+         <referencedColumn>43451EA4-A363-24AB-986A-8FC83FDB099F</referencedColumn>
+         <table>5DEE8851-620E-245C-DC75-91697B7D400C</table>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="descripcion" id="0F910565-BF7F-AE57-0CD4-414A019A1403" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 15:53:58 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>descripcion_producto</alias>
+         <dataType>VARCHAR2 (45)</dataType>
+         <reference>false</reference>
+         <referencedColumn>E464384A-B8CB-6C09-B892-2B391A6A5153</referencedColumn>
+         <table>5DEE8851-620E-245C-DC75-91697B7D400C</table>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nombre" id="9E6765B4-DB7A-0A00-2DDB-B13489CEA4B9" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 15:53:58 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>nombre_producto</alias>
+         <dataType>VARCHAR2 (45)</dataType>
+         <reference>false</reference>
+         <referencedColumn>474E7F12-77AF-526A-1592-D6459B10FDEB</referencedColumn>
+         <table>5DEE8851-620E-245C-DC75-91697B7D400C</table>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="departamento_id" id="3FA5D3B6-9934-67D6-60BF-F285251FEB05" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 15:53:58 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>departamento_id</alias>
+         <dataType>INTEGER</dataType>
+         <reference>false</reference>
+         <referencedColumn>954EED6B-91DE-10F8-F5B7-2011EE0BD159</referencedColumn>
+         <table>5DEE8851-620E-245C-DC75-91697B7D400C</table>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nombre" id="92B755EE-77C3-98E3-5068-81E1E8B8BC95" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 15:53:58 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>nombre_departamento</alias>
+         <dataType>VARCHAR2 (45)</dataType>
+         <reference>false</reference>
+         <referencedColumn>D315D5FA-B7AB-D67D-53EA-3BDFA794508A</referencedColumn>
+         <table>47B32AA6-3A88-2C9B-4270-C6214A23DF0F</table>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="telefono" id="425F2D34-46D9-603E-DF78-B57388FCF61C" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 15:53:58 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>telefono_departamento</alias>
+         <dataType>VARCHAR2 (45)</dataType>
+         <reference>false</reference>
+         <referencedColumn>432EE690-A77E-76D5-C8A8-7D712B0B579C</referencedColumn>
+         <table>47B32AA6-3A88-2C9B-4270-C6214A23DF0F</table>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="tipo" id="2943B0C2-AF9C-26DB-692D-716D919533AF" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 15:53:58 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>tipo_departamento</alias>
+         <dataType>departamento_tipos</dataType>
+         <reference>false</reference>
+         <referencedColumn>0750B6EB-5EB6-DDB4-81F3-9E4CFABEA094</referencedColumn>
+         <table>47B32AA6-3A88-2C9B-4270-C6214A23DF0F</table>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="venta_id" id="01203511-8E87-21A7-FFAF-9E11D5A63F2C" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 15:53:58 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>venta_id</alias>
+         <dataType>INTEGER</dataType>
+         <reference>false</reference>
+         <referencedColumn>1D87A051-0A61-9E5F-D7E4-5ACE22DFC483</referencedColumn>
+         <table>5DA184CA-B041-5587-FBBB-FC71374F3733</table>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="producto_id" id="976E0D9A-3EF3-7BCE-DD16-622FA62AFAA7" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 15:53:58 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>producto_id</alias>
+         <dataType>INTEGER</dataType>
+         <reference>false</reference>
+         <referencedColumn>3C2D2D1F-EBF0-A1E2-A6BC-AC2BBE99E36E</referencedColumn>
+         <table>5DA184CA-B041-5587-FBBB-FC71374F3733</table>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="cantidad" id="EACF225F-DAAB-86DA-1D73-168087CD7EE3" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 15:53:58 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>venta_producto_cantidad</alias>
+         <dataType>INTEGER</dataType>
+         <reference>false</reference>
+         <referencedColumn>0E8693FE-22DC-BF14-147E-F9989CAFF164</referencedColumn>
+         <table>5DA184CA-B041-5587-FBBB-FC71374F3733</table>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="pvp" id="822E06C6-0A65-1BAD-CE32-E8102588936D" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 15:53:58 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>venta_producto_pvp</alias>
+         <dataType>INTEGER</dataType>
+         <reference>false</reference>
+         <referencedColumn>2C9F0ED7-EDF4-89D1-4F07-34C25052024A</referencedColumn>
+         <table>5DA184CA-B041-5587-FBBB-FC71374F3733</table>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="fecha_hora" id="20F23D0B-0D08-EF11-3E8B-E9C481991387" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 15:53:58 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>venta_producto_fecha</alias>
+         <dataType>DATE</dataType>
+         <reference>false</reference>
+         <referencedColumn>378E3569-5DE1-6931-B75D-1CAD0DEAD772</referencedColumn>
+         <table>5DA184CA-B041-5587-FBBB-FC71374F3733</table>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="caja_id" id="694ECC23-26B0-C2E2-154C-53BDA0A1E509" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 15:53:58 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>venta_fecha_id</alias>
+         <dataType>INTEGER</dataType>
+         <reference>false</reference>
+         <referencedColumn>A92CB77E-1B30-B320-98A7-536E9B0CE894</referencedColumn>
+         <table>B1B1ED2E-12E9-B545-5868-D2319283AE68</table>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="fecha_hora" id="DCD67D07-CA85-3556-5A81-81C0B62FED41" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 15:53:58 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>venta_fecha</alias>
+         <dataType>DATE</dataType>
+         <reference>false</reference>
+         <referencedColumn>91DD74B7-7105-BC33-E858-097536C4395B</referencedColumn>
+         <table>B1B1ED2E-12E9-B545-5868-D2319283AE68</table>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="tarjeta" id="B1DDE2C0-9227-F96E-7AE4-4BC20C29DD6A" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 15:53:58 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>venta_tarjeta</alias>
+         <dataType>VARCHAR2 (45)</dataType>
+         <reference>false</reference>
+         <referencedColumn>B40979E4-BA8C-B836-DFBE-72DAE3CF1635</referencedColumn>
+         <table>B1B1ED2E-12E9-B545-5868-D2319283AE68</table>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="forma_pago" id="43B9FC92-329D-7F1D-87AA-E02AE7F5E58F" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 15:53:58 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>venta_forma_pago</alias>
+         <dataType>VARCHAR2 (4000)</dataType>
+         <reference>false</reference>
+         <referencedColumn>46829418-7115-A0EF-70AF-30AEF587A50C</referencedColumn>
+         <table>B1B1ED2E-12E9-B545-5868-D2319283AE68</table>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="importe_total" id="BDF72DBD-4C6B-21D4-5E8E-885C1464082D" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 15:53:58 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>venta_importe_total</alias>
+         <dataType>INTEGER</dataType>
+         <reference>false</reference>
+         <referencedColumn>6B96E2DB-D6B4-B56F-13AD-412DDFD2D8B6</referencedColumn>
+         <table>B1B1ED2E-12E9-B545-5868-D2319283AE68</table>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="activa" id="66F580C0-57CF-3E5A-D053-261599BF5821" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 15:53:58 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>venta_activa</alias>
+         <dataType>CHAR (1)</dataType>
+         <reference>false</reference>
+         <referencedColumn>DF655BB5-CF5D-2F2F-A009-FC803F269E75</referencedColumn>
+         <table>B1B1ED2E-12E9-B545-5868-D2319283AE68</table>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" id="D8DF5D2D-D060-AAA1-F04E-F9B7EBA43652">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 15:53:57 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>venta_fecha_dia</alias>
+         <expression>trunc(ventas.fecha_hora, &amp;apos;DD&amp;apos;)</expression>
+         <reference>false</reference>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" id="953B9952-3544-3A0A-B64B-2CA1AF2AA31B" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 15:53:57 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>venta_fecha_mes</alias>
+         <expression>trunc(ventas.fecha_hora, &amp;apos;MM&amp;apos;)</expression>
+         <reference>false</reference>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" id="AD4BFC76-78BB-6D1D-A00B-1D3C9638B3EC" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 15:53:57 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>venta_fecha_ejercicio</alias>
+         <expression>trunc(ventas.fecha_hora, &amp;apos;YYYY&amp;apos;)</expression>
+         <reference>false</reference>
+      </viewElement>
+   </viewElements>
+   <usedObjects>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5DEE8851-620E-245C-DC75-91697B7D400C">
+         <container>true</container>
+         <tableName>productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="47B32AA6-3A88-2C9B-4270-C6214A23DF0F">
+         <container>true</container>
+         <tableName>departamentos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5DA184CA-B041-5587-FBBB-FC71374F3733">
+         <container>true</container>
+         <tableName>venta_lista_productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B1B1ED2E-12E9-B545-5868-D2319283AE68">
+         <container>true</container>
+         <tableName>ventas</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="43451EA4-A363-24AB-986A-8FC83FDB099F">
+         <columnName>pvp</columnName>
+         <tableName>productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E464384A-B8CB-6C09-B892-2B391A6A5153">
+         <columnName>descripcion</columnName>
+         <tableName>productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="474E7F12-77AF-526A-1592-D6459B10FDEB">
+         <columnName>nombre</columnName>
+         <tableName>productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="954EED6B-91DE-10F8-F5B7-2011EE0BD159">
+         <columnName>departamento_id</columnName>
+         <tableName>productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D315D5FA-B7AB-D67D-53EA-3BDFA794508A">
+         <columnName>nombre</columnName>
+         <tableName>departamentos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="432EE690-A77E-76D5-C8A8-7D712B0B579C">
+         <columnName>telefono</columnName>
+         <tableName>departamentos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0750B6EB-5EB6-DDB4-81F3-9E4CFABEA094">
+         <columnName>tipo</columnName>
+         <tableName>departamentos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1D87A051-0A61-9E5F-D7E4-5ACE22DFC483">
+         <columnName>venta_id</columnName>
+         <tableName>venta_lista_productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3C2D2D1F-EBF0-A1E2-A6BC-AC2BBE99E36E">
+         <columnName>producto_id</columnName>
+         <tableName>venta_lista_productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0E8693FE-22DC-BF14-147E-F9989CAFF164">
+         <columnName>cantidad</columnName>
+         <tableName>venta_lista_productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2C9F0ED7-EDF4-89D1-4F07-34C25052024A">
+         <columnName>pvp</columnName>
+         <tableName>venta_lista_productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="378E3569-5DE1-6931-B75D-1CAD0DEAD772">
+         <columnName>fecha_hora</columnName>
+         <tableName>venta_lista_productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="A92CB77E-1B30-B320-98A7-536E9B0CE894">
+         <columnName>caja_id</columnName>
+         <tableName>ventas</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="91DD74B7-7105-BC33-E858-097536C4395B">
+         <columnName>fecha_hora</columnName>
+         <tableName>ventas</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B40979E4-BA8C-B836-DFBE-72DAE3CF1635">
+         <columnName>tarjeta</columnName>
+         <tableName>ventas</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="46829418-7115-A0EF-70AF-30AEF587A50C">
+         <columnName>forma_pago</columnName>
+         <tableName>ventas</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6B96E2DB-D6B4-B56F-13AD-412DDFD2D8B6">
+         <columnName>importe_total</columnName>
+         <tableName>ventas</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DF655BB5-CF5D-2F2F-A009-FC803F269E75">
+         <columnName>activa</columnName>
+         <tableName>ventas</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5DE78193-4A2E-8328-0001-1504988D725A">
+         <columnName>id</columnName>
+         <tableName>departamentos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="995461A1-AEEF-5784-7B02-E8E872CC7029">
+         <columnName>id</columnName>
+         <tableName>productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="92078F7E-39D6-A31B-3CB7-E955CABF1E76">
+         <columnName>id</columnName>
+         <tableName>ventas</tableName>
+      </UsedObject>
+   </usedObjects>
+</TableView>

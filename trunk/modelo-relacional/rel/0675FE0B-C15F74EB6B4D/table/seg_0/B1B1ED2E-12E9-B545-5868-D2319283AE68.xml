@@ -54,6 +54,8 @@
          </engineerTo>
          <use>1</use>
          <logicalDatatype>LOGDT011</logicalDatatype>
+         <autoIncrementColumn>true</autoIncrementColumn>
+         <identityColumn>true</identityColumn>
          <autoIncrementCycle>false</autoIncrementCycle>
       </Column>
       <Column class="oracle.dbtools.crest.model.design.relational.Column" name="caja_id" id="A92CB77E-1B30-B320-98A7-536E9B0CE894">
@@ -104,10 +106,12 @@
          <engineerTo>
             <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
          </engineerTo>
+         <formulaDesc>deducir_forma_pago(tarjeta)</formulaDesc>
          <nullsAllowed>true</nullsAllowed>
          <use>1</use>
          <logicalDatatype>LOGDT024</logicalDatatype>
-         <dataTypeSize>45</dataTypeSize>
+         <dataTypeSize>4000</dataTypeSize>
+         <computed>true</computed>
          <autoIncrementCycle>false</autoIncrementCycle>
       </Column>
       <Column class="oracle.dbtools.crest.model.design.relational.Column" name="importe_total" id="6B96E2DB-D6B4-B56F-13AD-412DDFD2D8B6">
@@ -121,6 +125,20 @@
          <nullsAllowed>true</nullsAllowed>
          <use>1</use>
          <logicalDatatype>LOGDT011</logicalDatatype>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="activa" id="DF655BB5-CF5D-2F2F-A009-FC803F269E75">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 12:26:39 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <use>1</use>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+         <dataTypeSize>1</dataTypeSize>
          <autoIncrementCycle>false</autoIncrementCycle>
       </Column>
    </columns>
@@ -138,6 +156,17 @@
          <indexColumnUsage>
             <colUsage columnID="92078F7E-39D6-A31B-3CB7-E955CABF1E76"/>
          </indexColumnUsage>
+      </ind_PK_UK>
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="47618D9B-2720-600E-5E4E-0E9EACDD1F9B" name="ventas_activas_UN">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 12:27:54 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <indexExpression>CASE  WHEN activa IS NOT NULL THEN caja_id ELSE NULL END</indexExpression>
+         <indexState>Unique Plain Index</indexState>
       </ind_PK_UK>
    </indexes>
 </Table>
