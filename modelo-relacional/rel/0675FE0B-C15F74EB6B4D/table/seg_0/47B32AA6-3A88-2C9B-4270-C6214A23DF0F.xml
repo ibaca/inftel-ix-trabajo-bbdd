@@ -70,6 +70,19 @@
          <dataTypeSize>45</dataTypeSize>
          <autoIncrementCycle>false</autoIncrementCycle>
       </Column>
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="tipo" id="0750B6EB-5EB6-DDB4-81F3-9E4CFABEA094">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 10:10:35 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <collectionType>DDE2DC4B-AA4B-2F0B-0434-D55EDC1C816A</collectionType>
+         <nullsAllowed>true</nullsAllowed>
+         <use>4</use>
+         <autoIncrementCycle>false</autoIncrementCycle>
+      </Column>
       <Column class="oracle.dbtools.crest.model.design.relational.Column" name="telefono" id="432EE690-A77E-76D5-C8A8-7D712B0B579C">
          <createdBy>ibaca</createdBy>
          <createdTime>2011-11-25 09:56:41 UTC</createdTime>
@@ -98,6 +111,19 @@
          <indexState>Primary Constraint</indexState>
          <indexColumnUsage>
             <colUsage columnID="5DE78193-4A2E-8328-0001-1504988D725A"/>
+         </indexColumnUsage>
+      </ind_PK_UK>
+      <ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="23FAE35F-AE50-C500-061F-CBE21EAC0F65" name="departamentos_nombre_UN">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 10:10:06 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <indexState>Unique Constraint</indexState>
+         <indexColumnUsage>
+            <colUsage columnID="D315D5FA-B7AB-D67D-53EA-3BDFA794508A"/>
          </indexColumnUsage>
       </ind_PK_UK>
    </indexes>

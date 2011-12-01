@@ -7,6 +7,16 @@
    <logging>YES</logging>
    <storeAs>BINARY XML</storeAs>
    <columnProxies>
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="tipo" id="0750B6EB-5EB6-DDB4-81F3-9E4CFABEA094">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 10:10:35 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <cache>NOCACHE</cache>
+         <elementType>departamento_tipos</elementType>
+         <ntStorageTable>departamentos_tipos</ntStorageTable>
+         <storeAs>BINARY XML</storeAs>
+      </ColumnProxy>
       <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="telefono" id="432EE690-A77E-76D5-C8A8-7D712B0B579C">
          <createdBy>ibaca</createdBy>
          <createdTime>2011-11-25 10:08:54 UTC</createdTime>
@@ -42,4 +52,14 @@
          <indexSort>SORTED</indexSort>
       </PrimaryKey>
    </primaryKeys>
+   <uniqueKeys>
+      <UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="departamentos_nombre_UN" id="23FAE35F-AE50-C500-061F-CBE21EAC0F65">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 10:10:06 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <sortedRows>SORTED</sortedRows>
+         <indexSort>SORTED</indexSort>
+      </UniqueKey>
+   </uniqueKeys>
 </TableProxyOraclev11g>
