@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" id="E82E82CB-3A07-94E6-FDA9-59DCCB18E6EC" directorySegmentName="seg_0" name="ventas_activas">
+   <createdBy>ibaca</createdBy>
+   <createdTime>2011-12-01 12:18:38 UTC</createdTime>
+   <generatorID>Generado por el Usuario</generatorID>
+   <ownerDesignName>modelo-relacional</ownerDesignName>
+   <engineerTo>
+      <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+   </engineerTo>
+   <userDefined>true</userDefined>
+   <userDefinedSQL>SELECT v.id venta_id,&amp;lt;br/&amp;gt;  l.producto_id producto_id,&amp;lt;br/&amp;gt;  l.cantidad cantidad,&amp;lt;br/&amp;gt;  l.pvp pvp&amp;lt;br/&amp;gt;FROM ventas v,&amp;lt;br/&amp;gt;  venta_lista_productos l&amp;lt;br/&amp;gt;WHERE l.venta_id = v.id&amp;lt;br/&amp;gt;AND (v.activa   IS NOT NULL)</userDefinedSQL>
+   <layoutSQL>&amp;lt;?xml version = &amp;apos;1.0&amp;apos; encoding = &amp;apos;UTF-8&amp;apos;?&amp;gt;&amp;lt;br&amp;gt;&amp;lt;ActiveQueryBuilderLayout&amp;gt;&amp;lt;SQL&amp;gt;Select v.id venta_id, l.producto_id producto_id, l.cantidad cantidad, l.pvp pvp From ventas v, venta_lista_productos l Where l.venta_id = v.id And (v.activa Is Not Null)&amp;lt;/SQL&amp;gt;&amp;lt;SubQueries&amp;gt;&amp;lt;SubQuery SQL=&amp;quot;Select v.id venta_id, l.producto_id producto_id, l.cantidad cantidad, l.pvp pvp From ventas v, venta_lista_productos l Where l.venta_id = v.id And (v.activa Is Not Null)&amp;quot;&amp;gt;&amp;lt;UnionSubQuery&amp;gt;&amp;lt;DataSource SQL=&amp;quot;ventas v&amp;quot; X=&amp;quot;50&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;152&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;DataSource SQL=&amp;quot;venta_lista_productos l&amp;quot; X=&amp;quot;240&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;118&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;/UnionSubQuery&amp;gt;&amp;lt;/SubQuery&amp;gt;&amp;lt;/SubQueries&amp;gt;&amp;lt;/ActiveQueryBuilderLayout&amp;gt;</layoutSQL>
+   <parsed>true</parsed>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Título</foType>
+         <fontStyle>1</fontStyle>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Columna</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Tipo de Dato</foType>
+         <colorRGB>-16744448</colorRGB>
+      </FontObject>
+   </fonts>
+   <usedContainers>
+      <container alias="v" containerID="B1B1ED2E-12E9-B545-5868-D2319283AE68"/>
+      <container alias="l" containerID="5DA184CA-B041-5587-FBBB-FC71374F3733"/>
+   </usedContainers>
+   <viewElements>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="A8CB426D-89FC-55AE-E900-76702747E302" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 12:21:44 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>venta_id</alias>
+         <dataType>INTEGER</dataType>
+         <reference>false</reference>
+         <referencedColumn>92078F7E-39D6-A31B-3CB7-E955CABF1E76</referencedColumn>
+         <table>B1B1ED2E-12E9-B545-5868-D2319283AE68</table>
+         <tableAlias>v</tableAlias>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="producto_id" id="01FC4AC9-80E4-ECEB-C89C-1EE2F8A6B709" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 12:21:44 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>producto_id</alias>
+         <dataType>INTEGER</dataType>
+         <reference>false</reference>
+         <referencedColumn>3C2D2D1F-EBF0-A1E2-A6BC-AC2BBE99E36E</referencedColumn>
+         <table>5DA184CA-B041-5587-FBBB-FC71374F3733</table>
+         <tableAlias>l</tableAlias>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="cantidad" id="2156811E-C74B-3FD5-81C7-9D92EE39ACAB" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 12:21:44 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>cantidad</alias>
+         <dataType>INTEGER</dataType>
+         <reference>false</reference>
+         <referencedColumn>0E8693FE-22DC-BF14-147E-F9989CAFF164</referencedColumn>
+         <table>5DA184CA-B041-5587-FBBB-FC71374F3733</table>
+         <tableAlias>l</tableAlias>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="pvp" id="5ADE0870-C7FE-0833-3739-D37510C84518" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 12:21:44 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>pvp</alias>
+         <dataType>INTEGER</dataType>
+         <reference>false</reference>
+         <referencedColumn>2C9F0ED7-EDF4-89D1-4F07-34C25052024A</referencedColumn>
+         <table>5DA184CA-B041-5587-FBBB-FC71374F3733</table>
+         <tableAlias>l</tableAlias>
+      </viewElement>
+   </viewElements>
+   <usedObjects>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B1B1ED2E-12E9-B545-5868-D2319283AE68">
+         <container>true</container>
+         <tableName>ventas</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5DA184CA-B041-5587-FBBB-FC71374F3733">
+         <container>true</container>
+         <tableName>venta_lista_productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="92078F7E-39D6-A31B-3CB7-E955CABF1E76">
+         <columnName>id</columnName>
+         <tableName>ventas</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3C2D2D1F-EBF0-A1E2-A6BC-AC2BBE99E36E">
+         <columnName>producto_id</columnName>
+         <tableName>venta_lista_productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0E8693FE-22DC-BF14-147E-F9989CAFF164">
+         <columnName>cantidad</columnName>
+         <tableName>venta_lista_productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2C9F0ED7-EDF4-89D1-4F07-34C25052024A">
+         <columnName>pvp</columnName>
+         <tableName>venta_lista_productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1D87A051-0A61-9E5F-D7E4-5ACE22DFC483">
+         <columnName>venta_id</columnName>
+         <tableName>venta_lista_productos</tableName>
+      </UsedObject>
+   </usedObjects>
+</TableView>

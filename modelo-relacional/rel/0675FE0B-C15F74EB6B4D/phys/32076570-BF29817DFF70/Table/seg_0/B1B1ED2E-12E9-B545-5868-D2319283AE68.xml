@@ -56,7 +56,24 @@
          <cache>NOCACHE</cache>
          <storeAs>BINARY XML</storeAs>
       </ColumnProxy>
+      <ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="activa" id="DF655BB5-CF5D-2F2F-A009-FC803F269E75">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 12:26:39 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <cache>NOCACHE</cache>
+         <storeAs>BINARY XML</storeAs>
+      </ColumnProxy>
    </columnProxies>
+   <indexProxies>
+      <IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ventas_activas_UN" id="47618D9B-2720-600E-5E4E-0E9EACDD1F9B">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-01 12:27:54 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <sortedRows>SORTED</sortedRows>
+      </IndexProxy>
+   </indexProxies>
    <primaryKeys>
       <PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ventas_PK" id="C48CDE43-9428-0A2A-01B7-988F9E133D1E">
          <createdBy>ibaca</createdBy>

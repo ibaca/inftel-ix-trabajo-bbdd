@@ -4,5 +4,5 @@
    <createdTime>2011-11-25 10:40:26 UTC</createdTime>
    <generatorID>Generado por el Usuario</generatorID>
    <ownerDesignName>modelo-relacional</ownerDesignName>
-   <source>CREATE OR REPLACE FUNCTION deducir_forma_pago (tarjeta IN VARCHAR) AS &amp;lt;br/&amp;gt;RETURN VARCHAR&amp;lt;br/&amp;gt;BEGIN&amp;lt;br/&amp;gt;  NULL;&amp;lt;br/&amp;gt;END;</source>
+   <source>CREATE OR REPLACE  FUNCTION deducir_forma_pago(&amp;lt;br/&amp;gt;  tarjeta IN VARCHAR &amp;lt;br/&amp;gt;)&amp;lt;br/&amp;gt;RETURN VARCHAR2 DETERMINISTIC AS&amp;lt;br/&amp;gt;BEGIN&amp;lt;br/&amp;gt;  IF tarjeta IS NOT NULL THEN&amp;lt;br/&amp;gt;    RETURN &amp;apos;tarjeta&amp;apos;;&amp;lt;br/&amp;gt;  ELSE&amp;lt;br/&amp;gt;    RETURN &amp;apos;metalico&amp;apos;;&amp;lt;br/&amp;gt;  END IF;&amp;lt;br/&amp;gt;END deducir_forma_pago;</source>
 </FunctionOracle>
