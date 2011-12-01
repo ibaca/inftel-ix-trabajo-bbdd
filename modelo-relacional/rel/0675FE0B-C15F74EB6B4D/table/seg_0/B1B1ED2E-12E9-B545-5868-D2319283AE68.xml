@@ -79,7 +79,7 @@
          <engineerTo>
             <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
          </engineerTo>
-         <nullsAllowed>true</nullsAllowed>
+         <defaultValue>CURRENT_DATE</defaultValue>
          <use>1</use>
          <logicalDatatype>LOGDT008</logicalDatatype>
          <autoIncrementCycle>false</autoIncrementCycle>

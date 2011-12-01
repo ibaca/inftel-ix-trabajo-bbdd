@@ -31,9 +31,9 @@
       <container alias="l" containerID="5DA184CA-B041-5587-FBBB-FC71374F3733"/>
    </usedContainers>
    <viewElements>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="A8CB426D-89FC-55AE-E900-76702747E302" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 12:21:44 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="DC9B335C-B620-8B43-7183-AB0714106F71" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:34:26 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -47,9 +47,9 @@
          <table>B1B1ED2E-12E9-B545-5868-D2319283AE68</table>
          <tableAlias>v</tableAlias>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="producto_id" id="01FC4AC9-80E4-ECEB-C89C-1EE2F8A6B709" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 12:21:44 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="producto_id" id="C4DAED1F-5A52-62A9-D06C-417EB7544E0A" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:34:26 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -63,9 +63,9 @@
          <table>5DA184CA-B041-5587-FBBB-FC71374F3733</table>
          <tableAlias>l</tableAlias>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="cantidad" id="2156811E-C74B-3FD5-81C7-9D92EE39ACAB" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 12:21:44 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="cantidad" id="247F4673-A0BE-75A8-DB5B-AA91465D7BDB" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:34:26 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -79,9 +79,9 @@
          <table>5DA184CA-B041-5587-FBBB-FC71374F3733</table>
          <tableAlias>l</tableAlias>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="pvp" id="5ADE0870-C7FE-0833-3739-D37510C84518" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 12:21:44 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="pvp" id="27B3318E-FCBA-554A-539F-ABE0CFE1CFA8" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:34:26 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -124,6 +124,10 @@
       <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1D87A051-0A61-9E5F-D7E4-5ACE22DFC483">
          <columnName>venta_id</columnName>
          <tableName>venta_lista_productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DF655BB5-CF5D-2F2F-A009-FC803F269E75">
+         <columnName>activa</columnName>
+         <tableName>ventas</tableName>
       </UsedObject>
    </usedObjects>
 </TableView>

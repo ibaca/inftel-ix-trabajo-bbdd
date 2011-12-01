@@ -144,7 +144,7 @@
          <logicalDatatype>LOGDT011</logicalDatatype>
          <autoIncrementCycle>false</autoIncrementCycle>
       </Column>
-      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="fecha_creacion" id="A020CBA8-740F-0E65-D9B4-16C4078BE5DE">
+      <Column class="oracle.dbtools.crest.model.design.relational.Column" name="fecha_hora" id="A020CBA8-740F-0E65-D9B4-16C4078BE5DE">
          <createdBy>ibaca</createdBy>
          <createdTime>2011-11-30 08:35:49 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
@@ -152,7 +152,7 @@
          <engineerTo>
             <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
          </engineerTo>
-         <defaultValue>SYSDATE</defaultValue>
+         <defaultValue>CURRENT_DATE</defaultValue>
          <use>1</use>
          <logicalDatatype>LOGDT008</logicalDatatype>
          <autoIncrementCycle>false</autoIncrementCycle>
