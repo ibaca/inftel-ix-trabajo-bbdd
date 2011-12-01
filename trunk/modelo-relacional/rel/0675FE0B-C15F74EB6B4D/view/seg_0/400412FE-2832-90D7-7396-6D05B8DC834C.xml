@@ -8,8 +8,8 @@
       <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
    </engineerTo>
    <userDefined>true</userDefined>
-   <userDefinedSQL>SELECT departamentos.id  AS departamento_id,&amp;lt;br/&amp;gt;  departamentos.nombre   AS departamento_nombre,&amp;lt;br/&amp;gt;  departamentos.tipo     AS departamento_tipo,&amp;lt;br/&amp;gt;  departamentos.telefono AS departamento_telefono,&amp;lt;br/&amp;gt;  productos.id           AS producto_id,&amp;lt;br/&amp;gt;  productos.nombre       AS producto_nombre,&amp;lt;br/&amp;gt;  productos.descripcion  AS producto_descripcion,&amp;lt;br/&amp;gt;  productos.pvp          AS producto_pvp,&amp;lt;br/&amp;gt;  ofertas.id             AS oferta_id,&amp;lt;br/&amp;gt;  ofertas.precio         AS oferta_precio,&amp;lt;br/&amp;gt;  ofertas.minimo         AS oferta_minimo,&amp;lt;br/&amp;gt;  ofertas.paquete        AS oferta_paquete,&amp;lt;br/&amp;gt;  ofertas.tardanza       AS oferta_tardanza,&amp;lt;br/&amp;gt;  ofertas.fecha_creacion AS oferta_fecha,&amp;lt;br/&amp;gt;  proveedores.id         AS proveedor_id,&amp;lt;br/&amp;gt;  proveedores.lid        AS proveedor_lid,&amp;lt;br/&amp;gt;  proveedores.cif        AS proveedor_cif,&amp;lt;br/&amp;gt;  proveedores.nombre     AS proveedor_nombre,&amp;lt;br/&amp;gt;  proveedores.telefono   AS proveedor_telefono,&amp;lt;br/&amp;gt;  proveedores.direccion  AS proveedor_direccion,&amp;lt;br/&amp;gt;  pedidos.id             AS pedidios_id,&amp;lt;br/&amp;gt;  pedidos.cantidad       AS pedidos_cantidad,&amp;lt;br/&amp;gt;  pedidos.fecha_creacion AS pedidos_fecha&amp;lt;br/&amp;gt;FROM departamentos&amp;lt;br/&amp;gt;INNER JOIN productos&amp;lt;br/&amp;gt;ON departamentos.id = productos.departamento_id&amp;lt;br/&amp;gt;INNER JOIN ofertas&amp;lt;br/&amp;gt;ON productos.id = ofertas.producto_id&amp;lt;br/&amp;gt;INNER JOIN proveedores&amp;lt;br/&amp;gt;ON proveedores.id = ofertas.proveedor_id&amp;lt;br/&amp;gt;INNER JOIN pedidos&amp;lt;br/&amp;gt;ON ofertas.id = pedidos.oferta_id</userDefinedSQL>
-   <layoutSQL>&amp;lt;?xml version = &amp;apos;1.0&amp;apos; encoding = &amp;apos;UTF-8&amp;apos;?&amp;gt;&amp;lt;br&amp;gt;&amp;lt;ActiveQueryBuilderLayout&amp;gt;&amp;lt;SQL&amp;gt;Select departamentos.id As departamento_id, departamentos.nombre As departamento_nombre, departamentos.tipo As departamento_tipo, departamentos.telefono As departamento_telefono, productos.id As producto_id, productos.nombre As producto_nombre, productos.descripcion As producto_descripcion, productos.pvp As producto_pvp, ofertas.id As oferta_id, ofertas.precio As oferta_precio, ofertas.minimo As oferta_minimo, ofertas.paquete As oferta_paquete, ofertas.tardanza As oferta_tardanza, ofertas.fecha_creacion As oferta_fecha, proveedores.id As proveedor_id, proveedores.lid As proveedor_lid, proveedores.cif As proveedor_cif, proveedores.nombre As proveedor_nombre, proveedores.telefono As proveedor_telefono, proveedores.direccion As proveedor_direccion, pedidos.id As pedidios_id, pedidos.cantidad As pedidos_cantidad, pedidos.fecha_creacion As pedidos_fecha From departamentos Inner Join productos On departamentos.id = productos.departamento_id Inner Join ofertas On productos.id = ofertas.producto_id Inner Join proveedores On proveedores.id = ofertas.proveedor_id Inner Join pedidos On ofertas.id = pedidos.oferta_id&amp;lt;/SQL&amp;gt;&amp;lt;SubQueries&amp;gt;&amp;lt;SubQuery SQL=&amp;quot;Select departamentos.id As departamento_id, departamentos.nombre As departamento_nombre, departamentos.tipo As departamento_tipo, departamentos.telefono As departamento_telefono, productos.id As producto_id, productos.nombre As producto_nombre, productos.descripcion As producto_descripcion, productos.pvp As producto_pvp, ofertas.id As oferta_id, ofertas.precio As oferta_precio, ofertas.minimo As oferta_minimo, ofertas.paquete As oferta_paquete, ofertas.tardanza As oferta_tardanza, ofertas.fecha_creacion As oferta_fecha, proveedores.id As proveedor_id, proveedores.lid As proveedor_lid, proveedores.cif As proveedor_cif, proveedores.nombre As proveedor_nombre, proveedores.telefono As proveedor_telefono, proveedores.direccion As proveedor_direccion, pedidos.id As pedidios_id, pedidos.cantidad As pedidos_cantidad, pedidos.fecha_creacion As pedidos_fecha From departamentos Inner Join productos On departamentos.id = productos.departamento_id Inner Join ofertas On productos.id = ofertas.producto_id Inner Join proveedores On proveedores.id = ofertas.proveedor_id Inner Join pedidos On ofertas.id = pedidos.oferta_id&amp;quot;&amp;gt;&amp;lt;UnionSubQuery&amp;gt;&amp;lt;DataSource SQL=&amp;quot;departamentos&amp;quot; X=&amp;quot;50&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;118&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;DataSource SQL=&amp;quot;productos&amp;quot; X=&amp;quot;240&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;237&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;DataSource SQL=&amp;quot;ofertas&amp;quot; X=&amp;quot;430&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;186&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;DataSource SQL=&amp;quot;proveedores&amp;quot; X=&amp;quot;626&amp;quot; Y=&amp;quot;214&amp;quot; Height=&amp;quot;152&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;DataSource SQL=&amp;quot;pedidos&amp;quot; X=&amp;quot;639&amp;quot; Y=&amp;quot;17&amp;quot; Height=&amp;quot;118&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;/UnionSubQuery&amp;gt;&amp;lt;/SubQuery&amp;gt;&amp;lt;/SubQueries&amp;gt;&amp;lt;/ActiveQueryBuilderLayout&amp;gt;</layoutSQL>
+   <userDefinedSQL>SELECT departamentos.id             AS departamento_id,&amp;lt;br/&amp;gt;  departamentos.nombre              AS departamento_nombre,&amp;lt;br/&amp;gt;  departamentos.tipo                AS departamento_tipo,&amp;lt;br/&amp;gt;  departamentos.telefono            AS departamento_telefono,&amp;lt;br/&amp;gt;  productos.id                      AS producto_id,&amp;lt;br/&amp;gt;  productos.nombre                  AS producto_nombre,&amp;lt;br/&amp;gt;  productos.descripcion             AS producto_descripcion,&amp;lt;br/&amp;gt;  productos.pvp                     AS producto_pvp,&amp;lt;br/&amp;gt;  ofertas.id                        AS oferta_id,&amp;lt;br/&amp;gt;  ofertas.precio                    AS oferta_precio,&amp;lt;br/&amp;gt;  ofertas.minimo                    AS oferta_minimo,&amp;lt;br/&amp;gt;  ofertas.paquete                   AS oferta_paquete,&amp;lt;br/&amp;gt;  ofertas.tardanza                  AS oferta_tardanza,&amp;lt;br/&amp;gt;  ofertas.fecha_hora                AS oferta_fecha,&amp;lt;br/&amp;gt;  proveedores.id                    AS proveedor_id,&amp;lt;br/&amp;gt;  proveedores.lid                   AS proveedor_lid,&amp;lt;br/&amp;gt;  proveedores.cif                   AS proveedor_cif,&amp;lt;br/&amp;gt;  proveedores.nombre                AS proveedor_nombre,&amp;lt;br/&amp;gt;  proveedores.telefono              AS proveedor_telefono,&amp;lt;br/&amp;gt;  proveedores.direccion             AS proveedor_direccion,&amp;lt;br/&amp;gt;  pedidos.id                        AS pedidio_id,&amp;lt;br/&amp;gt;  pedidos.cantidad                  AS pedido_cantidad,&amp;lt;br/&amp;gt;  pedidos.fecha_hora                AS pedido_fecha,&amp;lt;br/&amp;gt;  TRUNC(pedidos.fecha_hora, &amp;apos;DD&amp;apos;)   AS pedido_fecha_dia,&amp;lt;br/&amp;gt;  TRUNC(pedidos.fecha_hora, &amp;apos;MM&amp;apos;)   AS pedido_fecha_mes,&amp;lt;br/&amp;gt;  TRUNC(pedidos.fecha_hora, &amp;apos;YYYY&amp;apos;) AS pedido_fecha_ejercicio&amp;lt;br/&amp;gt;FROM departamentos&amp;lt;br/&amp;gt;INNER JOIN productos&amp;lt;br/&amp;gt;ON departamentos.id = productos.departamento_id&amp;lt;br/&amp;gt;INNER JOIN ofertas&amp;lt;br/&amp;gt;ON productos.id = ofertas.producto_id&amp;lt;br/&amp;gt;INNER JOIN proveedores&amp;lt;br/&amp;gt;ON proveedores.id = ofertas.proveedor_id&amp;lt;br/&amp;gt;INNER JOIN pedidos&amp;lt;br/&amp;gt;ON ofertas.id = pedidos.oferta_id</userDefinedSQL>
+   <layoutSQL>&amp;lt;?xml version = &amp;apos;1.0&amp;apos; encoding = &amp;apos;UTF-8&amp;apos;?&amp;gt;&amp;lt;br&amp;gt;&amp;lt;ActiveQueryBuilderLayout&amp;gt;&amp;lt;SQL&amp;gt;Select departamentos.id As departamento_id, departamentos.nombre As departamento_nombre, departamentos.tipo As departamento_tipo, departamentos.telefono As departamento_telefono, productos.id As producto_id, productos.nombre As producto_nombre, productos.descripcion As producto_descripcion, productos.pvp As producto_pvp, ofertas.id As oferta_id, ofertas.precio As oferta_precio, ofertas.minimo As oferta_minimo, ofertas.paquete As oferta_paquete, ofertas.tardanza As oferta_tardanza, ofertas.fecha_hora As oferta_fecha, proveedores.id As proveedor_id, proveedores.lid As proveedor_lid, proveedores.cif As proveedor_cif, proveedores.nombre As proveedor_nombre, proveedores.telefono As proveedor_telefono, proveedores.direccion As proveedor_direccion, pedidos.id As pedidio_id, pedidos.cantidad As pedido_cantidad, pedidos.fecha_hora As pedido_fecha, TRUNC(pedidos.fecha_hora, &amp;apos;DD&amp;apos;) As pedido_fecha_dia, TRUNC(pedidos.fecha_hora, &amp;apos;MM&amp;apos;) As pedido_fecha_mes, TRUNC(pedidos.fecha_hora, &amp;apos;YYYY&amp;apos;) As pedido_fecha_ejercicio From departamentos Inner Join productos On departamentos.id = productos.departamento_id Inner Join ofertas On productos.id = ofertas.producto_id Inner Join proveedores On proveedores.id = ofertas.proveedor_id Inner Join pedidos On ofertas.id = pedidos.oferta_id&amp;lt;/SQL&amp;gt;&amp;lt;SubQueries&amp;gt;&amp;lt;SubQuery SQL=&amp;quot;Select departamentos.id As departamento_id, departamentos.nombre As departamento_nombre, departamentos.tipo As departamento_tipo, departamentos.telefono As departamento_telefono, productos.id As producto_id, productos.nombre As producto_nombre, productos.descripcion As producto_descripcion, productos.pvp As producto_pvp, ofertas.id As oferta_id, ofertas.precio As oferta_precio, ofertas.minimo As oferta_minimo, ofertas.paquete As oferta_paquete, ofertas.tardanza As oferta_tardanza, ofertas.fecha_hora As oferta_fecha, proveedores.id As proveedor_id, proveedores.lid As proveedor_lid, proveedores.cif As proveedor_cif, proveedores.nombre As proveedor_nombre, proveedores.telefono As proveedor_telefono, proveedores.direccion As proveedor_direccion, pedidos.id As pedidio_id, pedidos.cantidad As pedido_cantidad, pedidos.fecha_hora As pedido_fecha, TRUNC(pedidos.fecha_hora, &amp;apos;DD&amp;apos;) As pedido_fecha_dia, TRUNC(pedidos.fecha_hora, &amp;apos;MM&amp;apos;) As pedido_fecha_mes, TRUNC(pedidos.fecha_hora, &amp;apos;YYYY&amp;apos;) As pedido_fecha_ejercicio From departamentos Inner Join productos On departamentos.id = productos.departamento_id Inner Join ofertas On productos.id = ofertas.producto_id Inner Join proveedores On proveedores.id = ofertas.proveedor_id Inner Join pedidos On ofertas.id = pedidos.oferta_id&amp;quot;&amp;gt;&amp;lt;UnionSubQuery&amp;gt;&amp;lt;DataSource SQL=&amp;quot;departamentos&amp;quot; X=&amp;quot;50&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;119&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;DataSource SQL=&amp;quot;productos&amp;quot; X=&amp;quot;240&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;245&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;DataSource SQL=&amp;quot;ofertas&amp;quot; X=&amp;quot;430&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;191&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;DataSource SQL=&amp;quot;proveedores&amp;quot; X=&amp;quot;620&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;155&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;DataSource SQL=&amp;quot;pedidos&amp;quot; X=&amp;quot;810&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;119&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;/UnionSubQuery&amp;gt;&amp;lt;/SubQuery&amp;gt;&amp;lt;/SubQueries&amp;gt;&amp;lt;/ActiveQueryBuilderLayout&amp;gt;</layoutSQL>
    <parsed>true</parsed>
    <fonts>
       <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
@@ -34,9 +34,9 @@
       <container containerID="7485C00C-D4DA-1FF0-89D7-C7A17FD03C40"/>
    </usedContainers>
    <viewElements>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="7204F117-67CD-0023-71D5-F21D813A6446" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="8E35F7E5-CD0F-138F-D4FD-002A75BC02C2" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -49,9 +49,9 @@
          <referencedColumn>5DE78193-4A2E-8328-0001-1504988D725A</referencedColumn>
          <table>47B32AA6-3A88-2C9B-4270-C6214A23DF0F</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nombre" id="9A20B771-9462-8E59-5F78-163C4B34D197" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nombre" id="155D1F2F-3C17-B1BE-9E91-D6CD7D9E494B" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -64,9 +64,9 @@
          <referencedColumn>D315D5FA-B7AB-D67D-53EA-3BDFA794508A</referencedColumn>
          <table>47B32AA6-3A88-2C9B-4270-C6214A23DF0F</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="tipo" id="7F1D4322-D1ED-666D-A60C-D88371FCF948" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="tipo" id="8731F51D-89E6-E2BF-19CF-DE15A229E139" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -79,9 +79,9 @@
          <referencedColumn>0750B6EB-5EB6-DDB4-81F3-9E4CFABEA094</referencedColumn>
          <table>47B32AA6-3A88-2C9B-4270-C6214A23DF0F</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="telefono" id="13DC31DD-67BD-D28F-C184-7D668F2EDBA5" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="telefono" id="34252CE0-7799-AC3F-2075-183ED1237333" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -94,9 +94,9 @@
          <referencedColumn>432EE690-A77E-76D5-C8A8-7D712B0B579C</referencedColumn>
          <table>47B32AA6-3A88-2C9B-4270-C6214A23DF0F</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="CC9A2C1A-4A68-A265-FB43-A763F304AA66" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="622F9859-3DF2-EEF9-D7BB-288743AC9B4D" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -109,9 +109,9 @@
          <referencedColumn>995461A1-AEEF-5784-7B02-E8E872CC7029</referencedColumn>
          <table>5DEE8851-620E-245C-DC75-91697B7D400C</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nombre" id="A5D6EF0D-286A-3A40-F208-C7BB9F1AC811" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nombre" id="874304C1-E1D6-73E5-32C2-D5D7E723B5E6" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -124,9 +124,9 @@
          <referencedColumn>474E7F12-77AF-526A-1592-D6459B10FDEB</referencedColumn>
          <table>5DEE8851-620E-245C-DC75-91697B7D400C</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="descripcion" id="05B18AAF-6176-6CAD-830D-E9182B837FA0" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="descripcion" id="F7349653-8416-9363-65AE-40A49657E66A" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -139,9 +139,9 @@
          <referencedColumn>E464384A-B8CB-6C09-B892-2B391A6A5153</referencedColumn>
          <table>5DEE8851-620E-245C-DC75-91697B7D400C</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="pvp" id="C2938A08-4FB5-476C-9E83-9743ED4189CB" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="pvp" id="1425D7F5-7DAB-A964-0439-1E2C405AB174" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -154,9 +154,9 @@
          <referencedColumn>43451EA4-A363-24AB-986A-8FC83FDB099F</referencedColumn>
          <table>5DEE8851-620E-245C-DC75-91697B7D400C</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="BB9B5B1C-4D6B-B184-C1E0-EA2A85BBA7A5" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="F3A96AFD-87EA-BCCE-0415-31D16A9766DD" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -169,9 +169,9 @@
          <referencedColumn>5A5FACF8-3689-06F7-113F-A474766F50C7</referencedColumn>
          <table>12D2724D-AF8F-CC1C-F058-DAE89CF5CCCD</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="precio" id="DC6FF26E-A345-6782-4300-91C78AE495A4" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="precio" id="045AD92A-7DC2-5099-42E8-70AA3090BF21" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -184,9 +184,9 @@
          <referencedColumn>1573DAE3-119C-0C79-AC4E-D9B980637C69</referencedColumn>
          <table>12D2724D-AF8F-CC1C-F058-DAE89CF5CCCD</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="minimo" id="0A55992E-0B28-9D93-D8FB-B5FFF3D8B333" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="minimo" id="DD194407-279D-9AD2-AC00-956C46E8EE6A" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -199,9 +199,9 @@
          <referencedColumn>2CA53646-BBE0-9ECD-6887-AF3E65DEECEB</referencedColumn>
          <table>12D2724D-AF8F-CC1C-F058-DAE89CF5CCCD</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="paquete" id="1B763CF0-3605-9957-19C8-00B3D625C81D" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="paquete" id="0331A564-54C4-228E-087E-D90FAE48CB5B" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -214,9 +214,9 @@
          <referencedColumn>22E86715-3261-6C3E-3EF7-468F628F6764</referencedColumn>
          <table>12D2724D-AF8F-CC1C-F058-DAE89CF5CCCD</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="tardanza" id="BEDC3EBC-82B3-5766-3000-905DA602F351" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="tardanza" id="A765943B-F7C4-60D6-3E14-EA6EB21EB1A4" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -229,9 +229,9 @@
          <referencedColumn>3A2D3AEC-0398-26FB-9DBD-820808EB3CFD</referencedColumn>
          <table>12D2724D-AF8F-CC1C-F058-DAE89CF5CCCD</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="fecha_creacion" id="A7AFF2C9-98A2-F09B-00FF-D97675D43BD1" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="fecha_hora" id="C584A11D-7DEF-4592-D617-4D67015B9EAF" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -244,9 +244,9 @@
          <referencedColumn>A020CBA8-740F-0E65-D9B4-16C4078BE5DE</referencedColumn>
          <table>12D2724D-AF8F-CC1C-F058-DAE89CF5CCCD</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="471D2C86-70AC-93A0-84F6-DBA22D84226A" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="66006792-AD46-572E-8CDC-A5DABC35243E" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -259,9 +259,9 @@
          <referencedColumn>29EBE882-6C3A-2441-F13B-7DCE8C2173EF</referencedColumn>
          <table>A18BC7F7-4567-8DE5-F02E-79EF4A80C58F</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="lid" id="DCADD3E0-4E80-C509-B4D9-35430895A539" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="lid" id="17E66DE1-6421-BF4D-BBA7-83E979F4272B" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -274,9 +274,9 @@
          <referencedColumn>F7C53BCC-8131-D9AA-A12B-9A66A5BB3C87</referencedColumn>
          <table>A18BC7F7-4567-8DE5-F02E-79EF4A80C58F</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="cif" id="B181EDB2-0E95-7F30-3B05-C930A1E6CAE2" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="cif" id="112A8959-D75C-2667-4AB9-BCDBB0914D8C" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -289,9 +289,9 @@
          <referencedColumn>30027E46-114F-71F2-127A-1198C94B56E8</referencedColumn>
          <table>A18BC7F7-4567-8DE5-F02E-79EF4A80C58F</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nombre" id="C08E757E-23B3-F3E9-EBF5-C651AF045CE4" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nombre" id="46459BD1-9FE0-75E9-B8B2-D99ECF949ECE" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -304,9 +304,9 @@
          <referencedColumn>14F070F0-9ECE-CDB6-84B7-3F902741FC77</referencedColumn>
          <table>A18BC7F7-4567-8DE5-F02E-79EF4A80C58F</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="telefono" id="3F7CAAC6-6E80-AFEC-C140-2FF46AAF24A3" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="telefono" id="90B9E036-F903-AF69-8C68-DF8A6BBE60B1" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -319,9 +319,9 @@
          <referencedColumn>25A94EA2-DA44-4D61-7918-6B9B515640A2</referencedColumn>
          <table>A18BC7F7-4567-8DE5-F02E-79EF4A80C58F</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="direccion" id="81572863-8037-6334-96E0-8BB8DB9A2A48" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="direccion" id="5C3FAFCF-1E07-4832-D62A-2CF6F7674E27" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -334,50 +334,89 @@
          <referencedColumn>4DA7FA04-4FE2-39F3-39CF-4F2E1A686A69</referencedColumn>
          <table>A18BC7F7-4567-8DE5-F02E-79EF4A80C58F</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="B90E581B-B68A-C954-307B-1006A56AF9F1" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="419AA90F-02DE-E2A4-54C9-A7DC6BA04C6A" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
             <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
          </engineerTo>
          <nullsAllowed>true</nullsAllowed>
-         <alias>pedidios_id</alias>
+         <alias>pedidio_id</alias>
          <dataType>INTEGER</dataType>
          <reference>false</reference>
          <referencedColumn>B49E464A-173D-7DA4-DDE9-13895E0B5DA7</referencedColumn>
          <table>7485C00C-D4DA-1FF0-89D7-C7A17FD03C40</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="cantidad" id="BD3C93B3-B3B7-0B79-1510-23759AD1C87F" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="cantidad" id="36560646-8288-87D2-1911-9E47FCBB80A2" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
             <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
          </engineerTo>
          <nullsAllowed>true</nullsAllowed>
-         <alias>pedidos_cantidad</alias>
+         <alias>pedido_cantidad</alias>
          <dataType>INTEGER</dataType>
          <reference>false</reference>
          <referencedColumn>651D82A7-A716-195D-3C0D-B2DFC91DDF3D</referencedColumn>
          <table>7485C00C-D4DA-1FF0-89D7-C7A17FD03C40</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="fecha_creacion" id="F7E2CAE7-D787-55EB-6F6D-86E7EBE24F59" directorySegmentName="seg_0">
-         <createdBy>ibaca</createdBy>
-         <createdTime>2011-12-01 15:49:03 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="fecha_hora" id="41BBC722-F9EC-6396-AD94-09799DC511EF" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
             <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
          </engineerTo>
          <nullsAllowed>true</nullsAllowed>
-         <alias>pedidos_fecha</alias>
+         <alias>pedido_fecha</alias>
          <dataType>DATE</dataType>
          <reference>false</reference>
          <referencedColumn>47D7AF02-DEB1-B7AB-CBEE-ECC545EA3EDB</referencedColumn>
          <table>7485C00C-D4DA-1FF0-89D7-C7A17FD03C40</table>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" id="7DB4446C-AC43-C62E-16F9-6148FA6077DE">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:36:52 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>pedido_fecha_dia</alias>
+         <expression>TRUNC(pedidos.fecha_hora, &amp;apos;DD&amp;apos;)</expression>
+         <reference>false</reference>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" id="20470FE7-331B-1742-E5F0-304F9C91D10B" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:36:52 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>pedido_fecha_mes</alias>
+         <expression>TRUNC(pedidos.fecha_hora, &amp;apos;MM&amp;apos;)</expression>
+         <reference>false</reference>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" id="E6F56E43-82AC-71CD-2E0E-590725DBE63D" directorySegmentName="seg_0">
+         <createdBy>inftel</createdBy>
+         <createdTime>2011-12-01 17:36:52 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>pedido_fecha_ejercicio</alias>
+         <expression>TRUNC(pedidos.fecha_hora, &amp;apos;YYYY&amp;apos;)</expression>
+         <reference>false</reference>
       </viewElement>
    </viewElements>
    <usedObjects>
@@ -454,7 +493,7 @@
          <tableName>ofertas</tableName>
       </UsedObject>
       <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="A020CBA8-740F-0E65-D9B4-16C4078BE5DE">
-         <columnName>fecha_creacion</columnName>
+         <columnName>fecha_hora</columnName>
          <tableName>ofertas</tableName>
       </UsedObject>
       <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="29EBE882-6C3A-2441-F13B-7DCE8C2173EF">
@@ -490,7 +529,7 @@
          <tableName>pedidos</tableName>
       </UsedObject>
       <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="47D7AF02-DEB1-B7AB-CBEE-ECC545EA3EDB">
-         <columnName>fecha_creacion</columnName>
+         <columnName>fecha_hora</columnName>
          <tableName>pedidos</tableName>
       </UsedObject>
       <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="954EED6B-91DE-10F8-F5B7-2011EE0BD159">
