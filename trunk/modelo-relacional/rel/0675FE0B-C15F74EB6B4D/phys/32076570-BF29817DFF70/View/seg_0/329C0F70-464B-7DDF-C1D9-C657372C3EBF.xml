@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableViewProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableViewProxyOraclev10g" name="producto_mas_vendido" id="329C0F70-464B-7DDF-C1D9-C657372C3EBF" directorySegmentName="seg_0">
+   <createdBy>ibaca</createdBy>
+   <createdTime>2011-12-02 18:47:41 UTC</createdTime>
+   <generatorID>Generado por el Usuario</generatorID>
+   <ownerDesignName>modelo-relacional</ownerDesignName>
+</TableViewProxyOraclev10g>

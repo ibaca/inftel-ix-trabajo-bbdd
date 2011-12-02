@@ -34,9 +34,9 @@
       <container containerID="7485C00C-D4DA-1FF0-89D7-C7A17FD03C40"/>
    </usedContainers>
    <viewElements>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="8E35F7E5-CD0F-138F-D4FD-002A75BC02C2" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="056B8023-2FC4-AB29-B574-28B4E78EDE21">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -49,9 +49,9 @@
          <referencedColumn>5DE78193-4A2E-8328-0001-1504988D725A</referencedColumn>
          <table>47B32AA6-3A88-2C9B-4270-C6214A23DF0F</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nombre" id="155D1F2F-3C17-B1BE-9E91-D6CD7D9E494B" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nombre" id="2E968F67-79C0-96B8-1260-7A2F59956829">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -64,9 +64,9 @@
          <referencedColumn>D315D5FA-B7AB-D67D-53EA-3BDFA794508A</referencedColumn>
          <table>47B32AA6-3A88-2C9B-4270-C6214A23DF0F</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="tipo" id="8731F51D-89E6-E2BF-19CF-DE15A229E139" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="tipo" id="4EFDD9A4-473C-374C-BCFA-2FB3CDCA8E01">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -79,9 +79,9 @@
          <referencedColumn>0750B6EB-5EB6-DDB4-81F3-9E4CFABEA094</referencedColumn>
          <table>47B32AA6-3A88-2C9B-4270-C6214A23DF0F</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="telefono" id="34252CE0-7799-AC3F-2075-183ED1237333" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="telefono" id="CBE186EA-7CD9-F42B-651E-A2D008FE2077">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -94,9 +94,9 @@
          <referencedColumn>432EE690-A77E-76D5-C8A8-7D712B0B579C</referencedColumn>
          <table>47B32AA6-3A88-2C9B-4270-C6214A23DF0F</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="622F9859-3DF2-EEF9-D7BB-288743AC9B4D" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="2185BD9E-5CA2-6121-2EA4-109620511B11" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -109,9 +109,9 @@
          <referencedColumn>995461A1-AEEF-5784-7B02-E8E872CC7029</referencedColumn>
          <table>5DEE8851-620E-245C-DC75-91697B7D400C</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nombre" id="874304C1-E1D6-73E5-32C2-D5D7E723B5E6" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nombre" id="571F4468-B53C-6204-F7AF-EB820FF10DCE" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -124,9 +124,9 @@
          <referencedColumn>474E7F12-77AF-526A-1592-D6459B10FDEB</referencedColumn>
          <table>5DEE8851-620E-245C-DC75-91697B7D400C</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="descripcion" id="F7349653-8416-9363-65AE-40A49657E66A" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="descripcion" id="324BCF7C-B87C-4944-22EE-9A42662BC615">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -139,9 +139,9 @@
          <referencedColumn>E464384A-B8CB-6C09-B892-2B391A6A5153</referencedColumn>
          <table>5DEE8851-620E-245C-DC75-91697B7D400C</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="pvp" id="1425D7F5-7DAB-A964-0439-1E2C405AB174" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="pvp" id="33ABF956-4DB7-6C2F-5F1F-1DE6EB0DF133">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -154,9 +154,9 @@
          <referencedColumn>43451EA4-A363-24AB-986A-8FC83FDB099F</referencedColumn>
          <table>5DEE8851-620E-245C-DC75-91697B7D400C</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="F3A96AFD-87EA-BCCE-0415-31D16A9766DD" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="6757663D-161D-E6DA-D6CF-733107AEA0EA" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -169,9 +169,9 @@
          <referencedColumn>5A5FACF8-3689-06F7-113F-A474766F50C7</referencedColumn>
          <table>12D2724D-AF8F-CC1C-F058-DAE89CF5CCCD</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="precio" id="045AD92A-7DC2-5099-42E8-70AA3090BF21" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="precio" id="EC862351-2743-91E3-00D4-982DE791F44A">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -184,9 +184,9 @@
          <referencedColumn>1573DAE3-119C-0C79-AC4E-D9B980637C69</referencedColumn>
          <table>12D2724D-AF8F-CC1C-F058-DAE89CF5CCCD</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="minimo" id="DD194407-279D-9AD2-AC00-956C46E8EE6A" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="minimo" id="8DEAEEE8-26F5-871F-FECF-B2A182AD53B6">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -199,9 +199,9 @@
          <referencedColumn>2CA53646-BBE0-9ECD-6887-AF3E65DEECEB</referencedColumn>
          <table>12D2724D-AF8F-CC1C-F058-DAE89CF5CCCD</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="paquete" id="0331A564-54C4-228E-087E-D90FAE48CB5B" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="paquete" id="F6B7B819-4856-B188-F7AD-DDA26482FFCE">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -214,9 +214,9 @@
          <referencedColumn>22E86715-3261-6C3E-3EF7-468F628F6764</referencedColumn>
          <table>12D2724D-AF8F-CC1C-F058-DAE89CF5CCCD</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="tardanza" id="A765943B-F7C4-60D6-3E14-EA6EB21EB1A4" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="tardanza" id="2E489F23-ED05-74CA-863E-3F45D5D17491">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -229,9 +229,9 @@
          <referencedColumn>3A2D3AEC-0398-26FB-9DBD-820808EB3CFD</referencedColumn>
          <table>12D2724D-AF8F-CC1C-F058-DAE89CF5CCCD</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="fecha_hora" id="C584A11D-7DEF-4592-D617-4D67015B9EAF" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="fecha_hora" id="18B69876-B87B-5B16-AC43-229CC442D1D5">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -244,9 +244,9 @@
          <referencedColumn>A020CBA8-740F-0E65-D9B4-16C4078BE5DE</referencedColumn>
          <table>12D2724D-AF8F-CC1C-F058-DAE89CF5CCCD</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="66006792-AD46-572E-8CDC-A5DABC35243E" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="D82EB353-DE57-DEF8-6F55-97623353C97B" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -259,9 +259,9 @@
          <referencedColumn>29EBE882-6C3A-2441-F13B-7DCE8C2173EF</referencedColumn>
          <table>A18BC7F7-4567-8DE5-F02E-79EF4A80C58F</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="lid" id="17E66DE1-6421-BF4D-BBA7-83E979F4272B" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="lid" id="EF7CEB82-2692-4240-3BC4-981FF8B047ED">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -274,9 +274,9 @@
          <referencedColumn>F7C53BCC-8131-D9AA-A12B-9A66A5BB3C87</referencedColumn>
          <table>A18BC7F7-4567-8DE5-F02E-79EF4A80C58F</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="cif" id="112A8959-D75C-2667-4AB9-BCDBB0914D8C" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="cif" id="4CD965B4-C157-F29B-E5E7-F4063ED75619">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -289,9 +289,9 @@
          <referencedColumn>30027E46-114F-71F2-127A-1198C94B56E8</referencedColumn>
          <table>A18BC7F7-4567-8DE5-F02E-79EF4A80C58F</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nombre" id="46459BD1-9FE0-75E9-B8B2-D99ECF949ECE" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="nombre" id="8638D7A4-19BD-2846-8C11-97D88DBECF1A" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -304,9 +304,9 @@
          <referencedColumn>14F070F0-9ECE-CDB6-84B7-3F902741FC77</referencedColumn>
          <table>A18BC7F7-4567-8DE5-F02E-79EF4A80C58F</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="telefono" id="90B9E036-F903-AF69-8C68-DF8A6BBE60B1" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="telefono" id="1DB30FE4-36C2-6C29-33F6-1C9D965878AE" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -319,9 +319,9 @@
          <referencedColumn>25A94EA2-DA44-4D61-7918-6B9B515640A2</referencedColumn>
          <table>A18BC7F7-4567-8DE5-F02E-79EF4A80C58F</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="direccion" id="5C3FAFCF-1E07-4832-D62A-2CF6F7674E27" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="direccion" id="F22618E2-A2F1-6DE6-D660-5AEDFA6BEC86">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -334,9 +334,9 @@
          <referencedColumn>4DA7FA04-4FE2-39F3-39CF-4F2E1A686A69</referencedColumn>
          <table>A18BC7F7-4567-8DE5-F02E-79EF4A80C58F</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="419AA90F-02DE-E2A4-54C9-A7DC6BA04C6A" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="id" id="778159DF-2FF4-92E8-A3E1-4865914CBB75" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -349,9 +349,9 @@
          <referencedColumn>B49E464A-173D-7DA4-DDE9-13895E0B5DA7</referencedColumn>
          <table>7485C00C-D4DA-1FF0-89D7-C7A17FD03C40</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="cantidad" id="36560646-8288-87D2-1911-9E47FCBB80A2" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="cantidad" id="22BA589F-2E2F-D0F0-ADF4-82EEDA88E3DB">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -364,9 +364,9 @@
          <referencedColumn>651D82A7-A716-195D-3C0D-B2DFC91DDF3D</referencedColumn>
          <table>7485C00C-D4DA-1FF0-89D7-C7A17FD03C40</table>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="fecha_hora" id="41BBC722-F9EC-6396-AD94-09799DC511EF" directorySegmentName="seg_0">
-         <createdBy>inftel</createdBy>
-         <createdTime>2011-12-01 17:39:24 UTC</createdTime>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="fecha_hora" id="48145C9A-8C3D-509D-227A-D01D24EA467C" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 20:23:02 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
          <ownerDesignName>modelo-relacional</ownerDesignName>
          <engineerTo>
@@ -392,7 +392,7 @@
          <expression>TRUNC(pedidos.fecha_hora, &amp;apos;DD&amp;apos;)</expression>
          <reference>false</reference>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" id="20470FE7-331B-1742-E5F0-304F9C91D10B" directorySegmentName="seg_0">
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="COL_96" id="20470FE7-331B-1742-E5F0-304F9C91D10B" directorySegmentName="seg_0">
          <createdBy>inftel</createdBy>
          <createdTime>2011-12-01 17:36:52 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>
@@ -405,7 +405,7 @@
          <expression>TRUNC(pedidos.fecha_hora, &amp;apos;MM&amp;apos;)</expression>
          <reference>false</reference>
       </viewElement>
-      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" id="E6F56E43-82AC-71CD-2E0E-590725DBE63D" directorySegmentName="seg_0">
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="COL_97" id="E6F56E43-82AC-71CD-2E0E-590725DBE63D" directorySegmentName="seg_0">
          <createdBy>inftel</createdBy>
          <createdTime>2011-12-01 17:36:52 UTC</createdTime>
          <generatorID>Generado por el Usuario</generatorID>

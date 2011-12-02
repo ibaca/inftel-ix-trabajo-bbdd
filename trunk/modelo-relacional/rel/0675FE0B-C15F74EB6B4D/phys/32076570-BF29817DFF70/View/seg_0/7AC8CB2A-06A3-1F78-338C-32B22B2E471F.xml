@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableViewProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableViewProxyOraclev10g" name="beneficio_anyo" id="7AC8CB2A-06A3-1F78-338C-32B22B2E471F" directorySegmentName="seg_0">
+   <createdBy>ibaca</createdBy>
+   <createdTime>2011-12-02 18:48:07 UTC</createdTime>
+   <generatorID>Generado por el Usuario</generatorID>
+   <ownerDesignName>modelo-relacional</ownerDesignName>
+</TableViewProxyOraclev10g>

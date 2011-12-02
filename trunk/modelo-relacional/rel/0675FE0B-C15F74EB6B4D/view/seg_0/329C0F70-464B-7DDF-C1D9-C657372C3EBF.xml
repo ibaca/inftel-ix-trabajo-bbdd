@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" id="329C0F70-464B-7DDF-C1D9-C657372C3EBF" directorySegmentName="seg_0" name="producto_mas_vendido">
+   <createdBy>ibaca</createdBy>
+   <createdTime>2011-12-02 18:47:41 UTC</createdTime>
+   <generatorID>Generado por el Usuario</generatorID>
+   <ownerDesignName>modelo-relacional</ownerDesignName>
+   <engineerTo>
+      <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+   </engineerTo>
+   <userDefined>true</userDefined>
+   <userDefinedSQL>SELECT departamento,&amp;lt;br/&amp;gt;  producto&amp;lt;br/&amp;gt;FROM&amp;lt;br/&amp;gt;  (SELECT A.nombre  AS departamento,&amp;lt;br/&amp;gt;    b.nombre        AS producto,&amp;lt;br/&amp;gt;    SUM(c.cantidad) AS total&amp;lt;br/&amp;gt;  FROM departamentos A,&amp;lt;br/&amp;gt;    productos b,&amp;lt;br/&amp;gt;    venta_lista_productos c&amp;lt;br/&amp;gt;  WHERE A.id = b.departamento_id&amp;lt;br/&amp;gt;  AND b.id   = c.producto_id&amp;lt;br/&amp;gt;  GROUP BY A.nombre,&amp;lt;br/&amp;gt;    b.nombre&amp;lt;br/&amp;gt;  )&amp;lt;br/&amp;gt;WHERE producto IN&amp;lt;br/&amp;gt;  (SELECT x.producto&amp;lt;br/&amp;gt;  FROM&amp;lt;br/&amp;gt;    (SELECT A.nombre  AS departamento,&amp;lt;br/&amp;gt;      b.nombre        AS producto,&amp;lt;br/&amp;gt;      SUM(c.cantidad) AS total&amp;lt;br/&amp;gt;    FROM departamentos A,&amp;lt;br/&amp;gt;      productos b,&amp;lt;br/&amp;gt;      venta_lista_productos c&amp;lt;br/&amp;gt;    WHERE A.id = b.departamento_id&amp;lt;br/&amp;gt;    AND b.id   = c.producto_id&amp;lt;br/&amp;gt;    GROUP BY A.nombre,&amp;lt;br/&amp;gt;      b.nombre&amp;lt;br/&amp;gt;    ) x&amp;lt;br/&amp;gt;  WHERE x.total =&amp;lt;br/&amp;gt;    (SELECT MAX(y.total)&amp;lt;br/&amp;gt;    FROM&amp;lt;br/&amp;gt;      (SELECT A.nombre  AS departamento,&amp;lt;br/&amp;gt;        b.nombre        AS producto,&amp;lt;br/&amp;gt;        SUM(c.cantidad) AS total&amp;lt;br/&amp;gt;      FROM departamentos A,&amp;lt;br/&amp;gt;        productos b,&amp;lt;br/&amp;gt;        venta_lista_productos c&amp;lt;br/&amp;gt;      WHERE A.id = b.departamento_id&amp;lt;br/&amp;gt;      AND b.id   = c.producto_id&amp;lt;br/&amp;gt;      GROUP BY A.nombre,&amp;lt;br/&amp;gt;        b.nombre&amp;lt;br/&amp;gt;      ) y&amp;lt;br/&amp;gt;    WHERE x.departamento = y.departamento&amp;lt;br/&amp;gt;    )&amp;lt;br/&amp;gt;  GROUP BY x.producto,&amp;lt;br/&amp;gt;    x.departamento&amp;lt;br/&amp;gt;  )</userDefinedSQL>
+   <layoutSQL>&amp;lt;?xml version = &amp;apos;1.0&amp;apos; encoding = &amp;apos;UTF-8&amp;apos;?&amp;gt;&amp;lt;br&amp;gt;&amp;lt;ActiveQueryBuilderLayout&amp;gt;&amp;lt;SQL&amp;gt;Select departamento, producto From (Select A.nombre As departamento, b.nombre As producto, Sum(c.cantidad) As total From departamentos A, productos b, venta_lista_productos c Where A.id = b.departamento_id And b.id = c.producto_id Group By A.nombre, b.nombre) Where producto In (Select x.producto From (Select A.nombre As departamento, b.nombre As producto, Sum(c.cantidad) As total From departamentos A, productos b, venta_lista_productos c Where A.id = b.departamento_id And b.id = c.producto_id Group By A.nombre, b.nombre) x Where x.total = (Select Max(y.total) From (Select A.nombre As departamento, b.nombre As producto, Sum(c.cantidad) As total From departamentos A, productos b, venta_lista_productos c Where A.id = b.departamento_id And b.id = c.producto_id Group By A.nombre, b.nombre) y Where x.departamento = y.departamento) Group By x.producto, x.departamento)&amp;lt;/SQL&amp;gt;&amp;lt;SubQueries&amp;gt;&amp;lt;SubQuery SQL=&amp;quot;Select departamento, producto From (Select A.nombre As departamento, b.nombre As producto, Sum(c.cantidad) As total From departamentos A, productos b, venta_lista_productos c Where A.id = b.departamento_id And b.id = c.producto_id Group By A.nombre, b.nombre) Where producto In (Select x.producto From (Select A.nombre As departamento, b.nombre As producto, Sum(c.cantidad) As total From departamentos A, productos b, venta_lista_productos c Where A.id = b.departamento_id And b.id = c.producto_id Group By A.nombre, b.nombre) x Where x.total = (Select Max(y.total) From (Select A.nombre As departamento, b.nombre As producto, Sum(c.cantidad) As total From departamentos A, productos b, venta_lista_productos c Where A.id = b.departamento_id And b.id = c.producto_id Group By A.nombre, b.nombre) y Where x.departamento = y.departamento) Group By x.producto, x.departamento)&amp;quot;&amp;gt;&amp;lt;UnionSubQuery&amp;gt;&amp;lt;DataSource SQL=&amp;quot;(Select A.nombre As departamento, b.nombre As producto, Sum(c.cantidad) As total From departamentos A, productos b, venta_lista_productos c Where A.id = b.departamento_id And b.id = c.producto_id Group By A.nombre, b.nombre)&amp;quot; X=&amp;quot;50&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;101&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;/UnionSubQuery&amp;gt;&amp;lt;/SubQuery&amp;gt;&amp;lt;SubQuery SQL=&amp;quot;Select A.nombre As departamento, b.nombre As producto, Sum(c.cantidad) As total From departamentos A, productos b, venta_lista_productos c Where A.id = b.departamento_id And b.id = c.producto_id Group By A.nombre, b.nombre&amp;quot;&amp;gt;&amp;lt;UnionSubQuery&amp;gt;&amp;lt;DataSource SQL=&amp;quot;departamentos A&amp;quot; X=&amp;quot;50&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;118&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;DataSource SQL=&amp;quot;productos b&amp;quot; X=&amp;quot;240&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;237&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;DataSource SQL=&amp;quot;venta_lista_productos c&amp;quot; X=&amp;quot;430&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;135&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;/UnionSubQuery&amp;gt;&amp;lt;/SubQuery&amp;gt;&amp;lt;SubQuery SQL=&amp;quot;Select x.producto From (Select A.nombre As departamento, b.nombre As producto, Sum(c.cantidad) As total From departamentos A, productos b, venta_lista_productos c Where A.id = b.departamento_id And b.id = c.producto_id Group By A.nombre, b.nombre) x Where x.total = (Select Max(y.total) From (Select A.nombre As departamento, b.nombre As producto, Sum(c.cantidad) As total From departamentos A, productos b, venta_lista_productos c Where A.id = b.departamento_id And b.id = c.producto_id Group By A.nombre, b.nombre) y Where x.departamento = y.departamento) Group By x.producto, x.departamento&amp;quot;&amp;gt;&amp;lt;UnionSubQuery&amp;gt;&amp;lt;DataSource SQL=&amp;quot;(Select A.nombre As departamento, b.nombre As producto, Sum(c.cantidad) As total From departamentos A, productos b, venta_lista_productos c Where A.id = b.departamento_id And b.id = c.producto_id Group By A.nombre, b.nombre) x&amp;quot; X=&amp;quot;50&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;101&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;/UnionSubQuery&amp;gt;&amp;lt;/SubQuery&amp;gt;&amp;lt;SubQuery SQL=&amp;quot;Select A.nombre As departamento, b.nombre As producto, Sum(c.cantidad) As total From departamentos A, productos b, venta_lista_productos c Where A.id = b.departamento_id And b.id = c.producto_id Group By A.nombre, b.nombre&amp;quot;&amp;gt;&amp;lt;UnionSubQuery&amp;gt;&amp;lt;DataSource SQL=&amp;quot;departamentos A&amp;quot; X=&amp;quot;50&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;118&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;DataSource SQL=&amp;quot;productos b&amp;quot; X=&amp;quot;240&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;237&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;DataSource SQL=&amp;quot;venta_lista_productos c&amp;quot; X=&amp;quot;430&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;135&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;/UnionSubQuery&amp;gt;&amp;lt;/SubQuery&amp;gt;&amp;lt;SubQuery SQL=&amp;quot;Select Max(y.total) From (Select A.nombre As departamento, b.nombre As producto, Sum(c.cantidad) As total From departamentos A, productos b, venta_lista_productos c Where A.id = b.departamento_id And b.id = c.producto_id Group By A.nombre, b.nombre) y Where x.departamento = y.departamento&amp;quot;&amp;gt;&amp;lt;UnionSubQuery&amp;gt;&amp;lt;DataSource SQL=&amp;quot;(Select A.nombre As departamento, b.nombre As producto, Sum(c.cantidad) As total From departamentos A, productos b, venta_lista_productos c Where A.id = b.departamento_id And b.id = c.producto_id Group By A.nombre, b.nombre) y&amp;quot; X=&amp;quot;50&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;101&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;/UnionSubQuery&amp;gt;&amp;lt;/SubQuery&amp;gt;&amp;lt;SubQuery SQL=&amp;quot;Select A.nombre As departamento, b.nombre As producto, Sum(c.cantidad) As total From departamentos A, productos b, venta_lista_productos c Where A.id = b.departamento_id And b.id = c.producto_id Group By A.nombre, b.nombre&amp;quot;&amp;gt;&amp;lt;UnionSubQuery&amp;gt;&amp;lt;DataSource SQL=&amp;quot;departamentos A&amp;quot; X=&amp;quot;50&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;118&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;DataSource SQL=&amp;quot;productos b&amp;quot; X=&amp;quot;240&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;237&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;DataSource SQL=&amp;quot;venta_lista_productos c&amp;quot; X=&amp;quot;430&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;135&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;/UnionSubQuery&amp;gt;&amp;lt;/SubQuery&amp;gt;&amp;lt;/SubQueries&amp;gt;&amp;lt;/ActiveQueryBuilderLayout&amp;gt;</layoutSQL>
+   <parsed>true</parsed>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Título</foType>
+         <fontStyle>1</fontStyle>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Columna</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Tipo de Dato</foType>
+         <colorRGB>-16744448</colorRGB>
+      </FontObject>
+   </fonts>
+   <viewElements>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="departamento" id="6C044D10-1150-3D4B-4581-253048A668C0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 18:47:59 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <expression>departamento</expression>
+         <reference>false</reference>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="producto" id="A33E0664-AB62-1421-A644-826A61A70352">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 18:47:59 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <expression>producto</expression>
+         <reference>false</reference>
+      </viewElement>
+   </viewElements>
+   <usedObjects>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="47B32AA6-3A88-2C9B-4270-C6214A23DF0F">
+         <container>true</container>
+         <tableName>departamentos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5DEE8851-620E-245C-DC75-91697B7D400C">
+         <container>true</container>
+         <tableName>productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5DA184CA-B041-5587-FBBB-FC71374F3733">
+         <container>true</container>
+         <tableName>venta_lista_productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D315D5FA-B7AB-D67D-53EA-3BDFA794508A">
+         <columnName>nombre</columnName>
+         <tableName>departamentos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="474E7F12-77AF-526A-1592-D6459B10FDEB">
+         <columnName>nombre</columnName>
+         <tableName>productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0E8693FE-22DC-BF14-147E-F9989CAFF164">
+         <columnName>cantidad</columnName>
+         <tableName>venta_lista_productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5DE78193-4A2E-8328-0001-1504988D725A">
+         <columnName>id</columnName>
+         <tableName>departamentos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="954EED6B-91DE-10F8-F5B7-2011EE0BD159">
+         <columnName>departamento_id</columnName>
+         <tableName>productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="995461A1-AEEF-5784-7B02-E8E872CC7029">
+         <columnName>id</columnName>
+         <tableName>productos</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3C2D2D1F-EBF0-A1E2-A6BC-AC2BBE99E36E">
+         <columnName>producto_id</columnName>
+         <tableName>venta_lista_productos</tableName>
+      </UsedObject>
+   </usedObjects>
+</TableView>
