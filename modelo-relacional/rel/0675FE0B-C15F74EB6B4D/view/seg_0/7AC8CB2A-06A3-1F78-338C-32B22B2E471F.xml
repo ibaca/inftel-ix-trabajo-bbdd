@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" id="7AC8CB2A-06A3-1F78-338C-32B22B2E471F" directorySegmentName="seg_0" name="beneficio_anyo">
+   <createdBy>ibaca</createdBy>
+   <createdTime>2011-12-02 18:48:07 UTC</createdTime>
+   <generatorID>Generado por el Usuario</generatorID>
+   <ownerDesignName>modelo-relacional</ownerDesignName>
+   <engineerTo>
+      <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+   </engineerTo>
+   <userDefined>true</userDefined>
+   <userDefinedSQL>SELECT Extract(YEAR FROM ventas.fecha_hora) anyo,&amp;lt;br/&amp;gt;  SUM(ventas.importe_total) beneficio_bruto&amp;lt;br/&amp;gt;FROM ventas&amp;lt;br/&amp;gt;GROUP BY Extract(YEAR FROM ventas.fecha_hora)&amp;lt;br/&amp;gt;HAVING Extract(YEAR FROM ventas.fecha_hora) &amp;gt;= (Extract(YEAR FROM CURRENT_DATE) - 10)&amp;lt;br/&amp;gt;ORDER BY anyo DESC</userDefinedSQL>
+   <layoutSQL>&amp;lt;?xml version = &amp;apos;1.0&amp;apos; encoding = &amp;apos;UTF-8&amp;apos;?&amp;gt;&amp;lt;br&amp;gt;&amp;lt;ActiveQueryBuilderLayout&amp;gt;&amp;lt;SQL&amp;gt;Select Extract(Year From ventas.fecha_hora) anyo, Sum(ventas.importe_total) beneficio_bruto From ventas Group By Extract(Year From ventas.fecha_hora) Having Extract(Year From ventas.fecha_hora) &amp;gt;= (Extract(Year From CURRENT_DATE) - 10) Order By anyo Desc&amp;lt;/SQL&amp;gt;&amp;lt;SubQueries&amp;gt;&amp;lt;SubQuery SQL=&amp;quot;Select Extract(Year From ventas.fecha_hora) anyo, Sum(ventas.importe_total) beneficio_bruto From ventas Group By Extract(Year From ventas.fecha_hora) Having Extract(Year From ventas.fecha_hora) &amp;gt;= (Extract(Year From CURRENT_DATE) - 10) Order By anyo Desc&amp;quot;&amp;gt;&amp;lt;UnionSubQuery&amp;gt;&amp;lt;DataSource SQL=&amp;quot;ventas&amp;quot; X=&amp;quot;50&amp;quot; Y=&amp;quot;20&amp;quot; Height=&amp;quot;169&amp;quot; Width=&amp;quot;140&amp;quot;/&amp;gt;&amp;lt;/UnionSubQuery&amp;gt;&amp;lt;/SubQuery&amp;gt;&amp;lt;/SubQueries&amp;gt;&amp;lt;/ActiveQueryBuilderLayout&amp;gt;</layoutSQL>
+   <parsed>true</parsed>
+   <fonts>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Título</foType>
+         <fontStyle>1</fontStyle>
+         <colorRGB>-16776961</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Columna</foType>
+         <colorRGB>-16777216</colorRGB>
+      </FontObject>
+      <FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+         <foType>Tipo de Dato</foType>
+         <colorRGB>-16744448</colorRGB>
+      </FontObject>
+   </fonts>
+   <viewElements>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" id="BF699408-FB9C-1C46-3C8E-2228807F0F7A">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 18:48:45 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>anyo</alias>
+         <expression>Extract(Year From ventas.fecha_hora)</expression>
+         <reference>false</reference>
+      </viewElement>
+      <viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" id="275C81C0-4CF1-AE46-9CDA-62AC3564BA34" directorySegmentName="seg_0">
+         <createdBy>ibaca</createdBy>
+         <createdTime>2011-12-02 18:48:45 UTC</createdTime>
+         <generatorID>Generado por el Usuario</generatorID>
+         <ownerDesignName>modelo-relacional</ownerDesignName>
+         <engineerTo>
+            <item key="0675FE0B-6CF7-314C-E161-C15F74EB6B4D" value="true"/>
+         </engineerTo>
+         <nullsAllowed>true</nullsAllowed>
+         <alias>beneficio_bruto</alias>
+         <expression>Sum(ventas.importe_total)</expression>
+         <reference>false</reference>
+      </viewElement>
+   </viewElements>
+   <usedObjects>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B1B1ED2E-12E9-B545-5868-D2319283AE68">
+         <container>true</container>
+         <tableName>ventas</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="91DD74B7-7105-BC33-E858-097536C4395B">
+         <columnName>fecha_hora</columnName>
+         <tableName>ventas</tableName>
+      </UsedObject>
+      <UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6B96E2DB-D6B4-B56F-13AD-412DDFD2D8B6">
+         <columnName>importe_total</columnName>
+         <tableName>ventas</tableName>
+      </UsedObject>
+   </usedObjects>
+</TableView>
